@@ -1,0 +1,26 @@
+Server Client
+Focus on packet number two of client file and answer the following questions. 
+Q1. What is the destination MAC address? (Use format xx:xx:xx:xx:xx:xx) = 00:00:0c:0c:00:0e
+
+Q2. What is the source MAC in this packet? = 00:0c:29:65:3b:25
+
+Q3. What is the IP identification number? (Use format xxxxxx with no commas) = 0x7e73
+
+Q4. What is the IP Time To Live? = 128
+
+Q5. What is the Source IP?	= 192.168.1.10
+
+Q6. Now change pcaps to the server side. Open server-slowfiledownload.pcapng. Which packet corresponds to the packet we were analyzing on the client side? What is the frame number? = 11
+
+Q7. Focus on this frame. What is the source MAC? = 00:00:0c:0c:00:ff
+
+Q8. What is the destination MAC? = 00:06:5b:00:02:ff
+
+Q9. What is the IP ID? = 0x7e73
+
+Q10. What is the IP TTL? = 127
+
+Q11. How many routers did this packet go through? = 1
+
+Q12. Was there a NAT (Network Address Translation) along the path? Y/N = 
+

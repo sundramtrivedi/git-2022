@@ -1,0 +1,13 @@
+--> Difference
+Hub														Switch													Router
+It shared bandwidth among the users also known			It provided path between sender and reciever 			It is a device that connects two different
+as bandwidth slicing									at full wire speed										network
+
+It is Layer 2 devices									It is a layer 2 device									It is a layer 3 device
+
+Deals with frame data unit								Deals with frame data unit								Deals with packets data unit
+
+Works with the MAC address								Works with the MAC address								Works with IP address
+
+
+--> 

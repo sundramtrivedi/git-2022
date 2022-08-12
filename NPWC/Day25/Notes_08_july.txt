@@ -1,0 +1,49 @@
+IrDA :-
+	-- INFRARED DATA ASSOCIATION
+	-- has its own protocol stack
+	-- Characteristics of IR
+		-- it is more secure than radio frequency communication
+		-- avoid many kinds of interference that affect radio frequency signals
+	-- It is most commonly used infrared connection
+	-- its only one to one communication
+	-- inexpensive technology >> low cost components
+	-- There are three versions >>
+		IrDA Version						Speed
+-----------------------------------------------------------------------------------------------------
+	Serial Infrared (SIR)					9600-115200 bps
+	Fast Infrared (FIR)					4 mbps
+	Very Fast Infrared (VFIR)				16 mbps
+	
+	-- Multiple Infrared Connections
+	-- Simplified IrDA protocol Stack
+		lowest layer >> IR physical link (IrPHY)
+	-- Functions of the Layers
+	
+RFID :-
+	-- RADIO FREQUENCY IDENTIFICATION
+	-- There are 3 general varieties of RFID :-
+		>> passive
+		>> semi-passive
+		>> active
+	-- Classes of RFID
+		>> class 0 / class I
+		>> class II
+		>> class III
+		>> class IV
+		>> class V
+	-- RFID operating frequency
+	
+GPS :-
+	-- GLOBAL POSITIONING SYSTEM
+	-- GPS system components
+		-- space segment
+	-- GPS system architecture
+		-- Distance = Velocity * Time
+	-- GPS positioning technology
+		-- triangulation method
+	-- NAVIC system
+		-- GEO
+		-- GSO
+	-- LBS >> LOCATION BASED SERVICE
+	-- AGPS >> ASSISTED GLOBAL POSITIONING SYSTEM
+	-- WIDE AREA AUGMENTATION SYSTEM

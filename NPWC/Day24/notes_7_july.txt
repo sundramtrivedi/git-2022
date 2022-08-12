@@ -1,0 +1,48 @@
+-> LPWAN :- LOW POWER WIDE AREA NETWORK
+	-- LoRaWAN
+	-- SigFox
+	-- NB-IOT
+
+-> LoRaWAN :- 
+	-- Low speed but long range and low power
+	-- Ideal for sensors that only seldomly send a value
+	-- LoRa is a modulation technique in physical layer
+	-- LoRaWAN specturm is unlicensed
+	-- single LoRa gateway potentially cover a significant amount of area
+
+	-> LoRaWAN Physical layer :-
+		-- Chirp Spread Spectrum (CSS)
+
+	-> LoRaWAN Mac Layer :-
+		-- Class-A is the best for energy mitigation while having the highest latency >> most energy efficient devices
+		-- Class-B is between Class-A and Class-C
+		-- Class-C has minimum latency but the highest energy usage >> lowest energy
+	
+-> SigFox :-
+	-- Low speed but low power, but also long range
+	-- meant for remote meter reading also used for any remote data uplink
+	-- security >> no encryption
+	-- cost >> cheap client equipment
+
+-> NB-IOT :-
+	-- Low power wide area network
+	-- also known as CAT-M2 / CAT-NB
+	-- For NB-IOT in LTE there are 2 band :- 	>> In-band option
+							>> Gaurd-band option
+	-- CAT-NB is a licensed spectrum
+	-- IIOT :- INDUSTRIAL INTERNET OF THINGS
+	-- CIOT :- CELLULAR INTERNET OF THINGS
+	
+-> Other Wireless Protocols :-
+	-- LTE Cat-M :-
+		-- Use cellular channels for long range
+		-- limited bandwidth
+		-- communication
+	-- Satellite :-
+		-- huge coverage
+		-- extremely expensive
+	
+	
+	
+	
+	

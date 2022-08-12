@@ -1,0 +1,31 @@
+Network model for IOT needs:
+
+--> NBIOT - Narrow Band IoT
+	LTEMIOT - Long Term Evaluation for Machines IoT
+
+--> NFC - 10cm
+	Bluetooth - 10m
+	 
+--> Networks available
+	WPAN, 6LowPAN, WPAN ZigBee, WLAN Wi-Fi, WPAN Bluetooth
+	
+--> 6LowPAN - IPv6 Low Power Personal Area Network
+
+--> Bluetooth classic 2.0
+	Bluetooth LowerPower
+
+--> IEEE 802.15.4 is used in the MAC/Data layer and Physical layer
+	ZigBee is on Network layer and Application layer
+	
+--> OSI - PDNTSPA
+	TCP/IP - ATIN
+
+--> ZigBee has Coordinator (C), Router (R) and End Device (E)
+	It is based on 802.15.4 protocol
+	Defines the Physical and MAC layer
+	
+--> CConverting from IPv6 to IPv4 is done via border router
+
+--> Delta time is the time taken between two packets to arrive
+
+--> 

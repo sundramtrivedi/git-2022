@@ -1,0 +1,33 @@
+--> Socket binds the IP and the port number
+	port numbers are the unique number given to the ports/point-of-communication
+	
+--> Stream socket is a connection oriented which uses the TCP protocol
+	Datagram socket is a connectionless which uses the UDP protocol
+	
+--> The set of API's:-
+	Client Side:-
+		socket()
+		connect()
+		send()
+		  |
+		recv()
+		close()
+	Server Side:-
+		socket()
+		bind()
+		listen()
+		accept()
+		recv()
+		  |
+		send()
+		recv()
+		  |
+		close()
+	
+--> socket()
+	1. Parameter specifies protocol/address family
+	2. Parameter specifies the socket type
+	3. Parameter specifies the protocol
+	
+	
+	

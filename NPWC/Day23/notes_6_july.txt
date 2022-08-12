@@ -1,0 +1,26 @@
+GSM - GLOBAL SYSTEM FOR MOBILE COMMUNICATION
+
+HLR - HOME LOCATION REGISTER
+WLR - VISITOR LOCATION REGISTER
+EIR - EQUIPMENT IDENTITY REGISTER
+AUC - AUTHENTICATION CENTER
+
+Shannon's Law :-
+	Shannon's Law says that the highest obtainable error-free data speed, expressed in bits per second (bps), is a function of the bandwidth and the signal-to-noise ratio. The function log2 represents the base-2 logarithm. All logarithms are exponents.
+	
+2G, 3G, 4G, 5G systems
+
+LTE - LONG TERM EVOLUTION
+	-- LTE supports both TDD (TIME DIVISION DUPLEX) and FDD (FREQUENCY DIVISION DUPLEX) and also MIMO 
+
+eMBB - ENHANCED MOBILE BROAD BAND
+
+URLLC - ULTRA - RELIABLE AND LOW - LATENCY COMMUNICATIONS
+
+mMTC - MASSIVE MACHINE TYPE COMMUNICATIONS
+
+NOMA - NON-ORTHOGONAL MULTIPLE ACCESS
+
+FBMC - FILTER BANK MULTI-CARRIER
+
+SCMA - SPARSE CODE MULTIPLE ACCESS

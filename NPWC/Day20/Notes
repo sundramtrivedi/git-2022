@@ -1,0 +1,16 @@
+--> Amazon quick site or Grafana for dashboard visualization
+
+--> SNS this is used for notification (Simple Notification Service)
+	Republishing and MQTT message
+	Sending an Amazon SNS notification
+	Storing the data into Dynamo DB table
+	Formatting a notification by using an AWS lambda function
+	
+--> Creating Policy
+	1. Search for IAM 
+	2. Create a new policy
+	3. Choose IoT in Service and also tick all service
+	4. Expand Resources and select the All resources 
+
+--> 
+

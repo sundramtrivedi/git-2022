@@ -1,0 +1,25 @@
+--> IPv4 
+	classfull addressing - huge wastage of addresses
+	classless addressing - 
+	IP addresses are 32 bit 
+	
+--> Classes
+	Class A - 0 to 127
+	Class B - 128 to 191
+	Class C - 192 to 223
+	Class D - 224 to 239
+	Class E - 240 to 255
+
+--> Masking concept
+	An address in the blovk and the mask will create the beginning address.
+	
+--> Default mask for:-
+	Class A - 255.0.0.0
+	Class B - 255.255.0.0
+	Class C - 255.255.255.0
+	
+--> Packet with loopback address will not reach the network
+
+
+--> IPv6
+

@@ -1,0 +1,11 @@
+--> IPv6 is 128 bits
+
+--> Network Address Translation - public to private
+
+--> DHCP uses the DORA services
+	DORA stands for - Discover, Offer, Request, Acknowledge
+
+--> No broadcasting address in IPv6 instead it uses the multicast to communicate with multiple hosts.
+
+-->
+

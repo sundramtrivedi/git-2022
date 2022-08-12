@@ -1,0 +1,5 @@
+1) cerate a empty folder named data in same foler at that of server and client file
+2) create a text file ex.hello.txt and msg in it
+3)now run server
+4)client
+5)file will be trf to data folder

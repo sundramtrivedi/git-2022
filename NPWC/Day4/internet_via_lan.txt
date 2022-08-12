@@ -1,0 +1,37 @@
+Tutorial Internet setting in Rpi via PC Ethernet
+
+Step1 : set a static ip in Rpi
+sudo nano /etc/network/interfaces
+
+auto eth0
+allow-hotplug eth0
+iface eth0 inet static
+address 10.0.0.2
+netmask 255.255.255.0
+gateway 10.0.0.1 #ip of your pc's ethrnet interface
+dns-nameserver 192.168.72.3 #dns of your pc's internet interface
+dns-nameserver 8.8.8.8 #dns of google
+
+Step2 : sudo service networking restart
+Step3 : Check weather in GUI you dont have a confilcting IP for the same interface i.e. eth0
+Step4 : set a static ip for your pc's ethrnet interface #eg eno1
+sudo nano /etc/network/interfaces
+
+auto eno1
+allow-hotplug eno1
+iface eno1 inet static
+address 10.0.0.1
+netmask 255.255.255.0
+
+Step5 : Enable IP Forwarding
+sudo su
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+Step6 : Set ip tables POSTROUTING Policy
+iptables -F
+iptables -t nat -A POSTROUTING -o wlp3s2 -j MASQUERADE 
+#where -t TABLE which you are modifying
+#-A appends in POSTROUTING POLICY
+#-o is the interface in pc which is connected to internet and all teh traffic will output through this interface
+#-j Alogrithm for POSTROUTING , here we are using MASQUERADE as it converts/translates ip of one class to another
+

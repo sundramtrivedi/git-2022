@@ -1,0 +1,35 @@
+============================================== ZigBee =========================================
+--> Lower two layer of the OSI layer is used for IEEE/Zigbee 802.15.4
+	Physical layer and Data Link Layer (Mac Layer)
+
+--> ZigBee has used the above two layer and added three more layers of its own
+	Network and security
+	Application Framework
+	Applications
+
+--> https://www.sanfoundry.com/1000-iot-questions-answers/
+
+--> Slotted and unslotted
+	We are using slotted beacsie it will use low power as it can be active and inactive
+
+--> Their are two kind of addressing 
+	64 - extended address
+	16 - short address
+
+--> Fully handshaking protocol
+
+--> It uses three channels
+	868, 916, 2.5 ghz
+
+--> Beacon frame means advertising the ip
+
+============================================== 6LoPAN =========================================
+
+--> RFC 4919
+
+--> XAMPP - Cross-Platform Apache MySQL PHP
+
+--> RFC 4944 
+
+--> 
+

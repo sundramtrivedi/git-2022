@@ -1,0 +1,21 @@
+--> Bluetooth 4.0, Bluetooth Low Energy, Bluetooth Smart
+	It was madae for IOT purpose only
+	The connection is done on the base of requirement or demand
+	Their are only 40 channels in low energy
+	Single protocol
+	Latency of 3ms
+	Only Star topology is supported
+	For robustness we use the frequency hopping
+
+--> In architecture
+	The GAP - Generic Access Profile and
+	GATT - Generic Attribute Profile
+	
+--> It works on the physical layer with ISM band
+
+--> Physical Channels
+	37, 38 and 39 channels are used for advertising
+	These channels are designed in such a way that it does not interfere with the WiFi channels.
+	
+--> 
+

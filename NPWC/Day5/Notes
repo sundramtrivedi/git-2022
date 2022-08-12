@@ -1,0 +1,5 @@
+--> MAC layer protocol for wireless networks
+	For ethernet we use CSMA-CD (802.3)
+	For wireless we use CSMA-CA, it depends of two signal Request To Send and Clear To Send. (802.11)
+	
+

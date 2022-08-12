@@ -1,0 +1,7 @@
+--> TCP sends stream of data using
+	Sending this data creates a pipeline for the data
+	Since every packets have ID none of the packets will ever be missed or lost during the transmission
+	It has circular buffer to store all the data bytes
+	
+	
+--> 
