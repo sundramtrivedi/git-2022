@@ -1,0 +1,7 @@
+Databases and Tables :-
+	-- Instead of creating a separate metastore for Spark tables, spark by default uses the Apache Hive metastore
+	-- Spark allows two types of tables :-
+			-- Managed tables :-
+				-- DROP table will cause deletion of metadata and data
+			-- Unmanaged tables
+				-- DROP table will cause deletion of only metadata

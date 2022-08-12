@@ -1,0 +1,10 @@
+DataFrame Basics :-
+	-- Spark dataframes holds data in a column and row format
+	-- each column represents some feature or variable
+
+Dataframe Usage :-
+	-- Spark Dataframe are able to input and output data from a wide variety of sources
+	-- We can then use these Dataframes to apply various transformations on the data
+	-- At the end of the transformation calls, we can either show or collect the results to display or for some final processing
+	
+

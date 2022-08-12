@@ -1,0 +1,20 @@
+--> Regression Model
+    It is a type of supervised learning
+    Connection or relation between two things is called as regression
+    Two terms we should be aware of Correlation and Regression quantifiers
+    We cant have perfectly linear relationship - iska solution hai regression
+    The problem statement can be solved using least squares
+
+--> Classification Model
+    It is used when we want to get a answer in yes/no, true/false ir similar types
+    K-means algorithm - It finds the similar kinds of items and groups them into a clusters 
+    Algorithm to find the distacne between points
+        - Euclidean distance measure
+        - Manhattan distacne measure
+        - A squared euclidean distacne measure
+        - Cosine distacne measure 
+    To terms are important entropy and information gain. 
+
+--> Read the article at
+    about machine learning application in Iot
+    https://www.opensourceforu.com/2018/10/applying-machine-learning-to-iot/

@@ -1,0 +1,38 @@
+-> Introduction to Data Analytics :-
+	-- It is a combination / intersection of 
+		-- 'Trajectory'(Volume / Variety) , 
+		-- 'Benefit Potential'(Society / Business) and 
+		-- 'Lowering Barriers'(Affordability / Accessibility)
+	
+-> What are the different V's in Big data? :-
+	-- VOLUME >> data at rest
+	-- VELOCITY >> data in motion
+	-- VARIETY >> data in many forms
+	-- VERACITY >> data in doubt
+	-- VALUE >> data in limbo
+
+-> GIGO - GARBAGE IN & GARBAGE OUT
+
+-> Data holds potential, and the size of that potential is growing larger and becoming easier to unlock the data
+
+-> Data are all of the things being recorded with technology
+
+-> There are 2 types of cookies :-
+	-- First-party cookies
+	-- Third-party cookies
+	
+-> What is data used for? :-
+	-- Decisions
+	-- Products
+	-- Stories
+	
+-> What is GDPR? 
+
+-> Three key parts :-
+	-- Data analytics >> Decisions with data
+	-- Data science >> Decision-based(advanced statistical modeling) => Data science => Feature-based(building data products) 
+	-- Data engineering >> Implementing infrastructure(that enables Data Analytics and science)
+	
+-> Talend Studio
+
+-> Apache NiFi

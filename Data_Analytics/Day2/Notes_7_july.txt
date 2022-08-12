@@ -1,0 +1,65 @@
+MOORE'S LAW AND PARALLEL PROCESSING :-
+	-- Moore's law is a term used to refer to the observation made by Gordon Moore in 1965 that the number of transistors in a dense integrated circuit (IC) doubles about every two years. Moore's law isn't really a law in the legal sense or even a proven theory in the scientific sense (such as E = mc2).
+	-- Parallel processing is a method in computing of running two or more processors (CPUs) to handle separate parts of an overall task. Breaking up different parts of a task among multiple processors will help reduce the amount of time to run a program.
+	
+BIG DATA :-
+	-- This is a term related to extracting meaningful data by analyzing the huge amount of complex, variously formatted data generated at high speed, that cannot be handled, or processed by the traditional system. 
+
+What is the difference between scale up and scale down?
+
+HDFS :-
+	-- Data Storage in HDFS
+	
+What is distributed and parallel processing?
+
+What is distributed and parallel computing?
+
+What is distributed and parallel systems?
+
+HADOOP FILE SYSTEMS (FS) COMMANDS :-
+	-- create a directory
+	-- list the content of a directory
+	-- upload a file in HDFS
+	-- download a file from HDFS
+	-- view the contents of a file
+
+MAPREDUCE :-
+	-- SORT and SHUFFLE
+
+HADOOP DAEMONS 
+
+	
+			MAPREDUCE							APACHE SPARK
+--------------------------------------------------------------------------------------------------------------------------
+1.	It is a framework that is open-source 			It is an open-source framework
+	which is used for writing data into 				used for faster data processing.
+	the Hadoop Distributed File System.	 
+
+2.	It is having a very slow speed as compared 			It is much faster than MapReduce.
+	to Apache Spark.	
+
+3.	It is unable to handle real-time processing.			It can deal with real-time processing.
+
+4.	It is difficult to program as you required 			It is easy to program.
+	code for every process.	
+
+5.	It supports more security projects.				Its security is not as good as MapReduce and 										continuously working on its security issues.
+
+6.	For performing the task, It is unable to cache		It can cache the memory data for processing its task.
+	 in memory.	
+
+7.	Its scalability is good as you can add 			It is having low scalability as compared to MapReduce.
+	up to n different nodes.	 
+
+8.	It actually needs other queries to perform the task.		It has Spark SQL as its very own query language.
+
+APACHE SPARKS :-
+	-- SparkContext Object
+	-- Spark initialization - version before and from 2.0
+
+pySpark Basics :-
+	-- Fundamental Data Abstractions in pySpark
+		-- RDD(Resilient Distributed Dataset) - Low Level Data Structure >> a set of elements of the same data type 
+		-- DataFrame - High Level Data Structure >> a table of rows with named columns
+		-- Dataset* >> similar to relational tables and not supported in pyspark , supported in java
+	-- Data Processing in pySpark

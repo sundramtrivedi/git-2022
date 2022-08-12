@@ -1,0 +1,85 @@
+What is Apache Spark?
+	-- One of the most widely used big data frameworks
+	-- Developed in scala language (which is similar to java)
+	-- Open-source cluster-computing framework for real-time processing developed by the Apache Software Foundation
+	-- Provides an interface for programming entire clusters with implicit data parallelism and fault-tolerance
+
+Why Spark?
+
+Still the problem was not resolved fully. MapReduce problems:
+	-- Hard to manage and administer due to operational complexity
+	-- MapReduce forces the data processing into Maap and Reduce. Other workflows like join, filter, union etcs are missing
+	-- Stateless machine - Read and Write to disk before or after each map and reduce stages. This repeated performance of disk I/O took its toll
+	-- Native Java
+	
+Spark Characteristics:-
+	-- Speed
+	-- Powerful caching
+	-- Deployment
+	-- Real Time
+	-- Polyglot
+	
+Cache:-
+	-- In computing, a cache is a hardware or software component that stores data so that future requests for that data can be served faster; the data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere.
+	-- Cache memory is a chip-based computer component that makes retrieving data from the computer's memory more efficient
+	-- It acts as a temporary storage area that the computer's processor can retrieve data from easily
+	-- Cache memory is faster than main memory
+	
+Brief History of Spark:-
+	-- Spark started in 2009 as a research project in the UC Berkeley RAD Lab
+	-- Spark was first open sourced in March 2010, and was transferred to the Apache Software Foundation in June 2013
+	
+Key Points:-
+	-- DataFrame code is far more expressive and simpler
+	-- uses high-level DSL (Domain Specific Language) and API to tell spark what to do
+	-- spark can inspect the code and optimize it
+	-- the code will be very similar in scala(unlike for RDD)
+	
+RDD Types:-
+	-- immutable data set
+	-- two types 	=> 	--> Simple RDD		-- eg. RDD[integer], RDD[string], RDD[(string integer)]
+				--> Complex RDD	-- eg. RDD[string, (integer, integer, double)]
+
+Spark RDD Operations - 1
+	-- Spark RDD are read-only, immutable, and distributed
+	-- once created they cannot be altered
+	-- they can be transformed
+	-- RDD support two types of operation:-
+		-- Transformation
+		-- Actions
+		
+**Lazy Evaluation - 1
+	-- each transformation is a lazy evaluation
+	-- evaluation does not start until an action is triggered
+	
+	RDD -----Filter---> RDD -----Group By-----> RDD -----Count-----> Only at this point execution Starts
+
+Lazy Evaluation - 2
+
+	Without lazy evaluation					with lazy evaluation
+--------------------------------------------------------------------------------------------------------------------
+	load the 1TB File						Wait for an Action and then Load the 1TB File
+	
+	perform full scan to find 					Filter out first 10 records having "Robert"
+	out all Records having 
+	"Robert"
+	
+	Retrieve 10 Records
+	
+RDD actions:-
+	-- RDD operations that produce non-RDD values
+	-- eg. reduce(), collect(), count(), saveAsTextFile(), saveAsMap()
+	
+RDD Characteristics and Drawbacks:-
+	-- Low level API
+	-- control of dataset
+	-- dealing with unstructured data
+	
+RDD Transformation and Actions:-
+
+	
+	
+	
+	
+
+

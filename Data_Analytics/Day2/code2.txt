@@ -1,0 +1,9 @@
+#c:/>spark-submit rdd-example.py
+#rdd-example.py
+
+import sys
+from pyspark import SparkContext, SparkConf
+sc = SparkContext("local", "pySpark RDD example")
+myRDD = sc.parallelize([('Big Data', 80), ('Python', 85), ('ML', 56), ('Java', 67), ('Web Analytics', 78), ('Good Programming Practices', 67), ('Software Design', 77)])
+myRDD.take(7)
+myRDD.saveAsTextFile("myRDD/")

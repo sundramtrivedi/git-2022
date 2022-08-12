@@ -1,0 +1,37 @@
+Lambda Functions:-
+	-- If we have some code which is reusable the best way to add separate function and if you want to call a function or code only one time then we use lambda function
+	-- Lambda function is a anonymous function
+	-- Python supports the creation of anonymous functions (i.e functions defined without a name), using a construct called lambda.
+	-- Lambda function is inline 
+	-- Syntax :- lambda <argument> : <expression>
+	-- Lambda definition does not include a "return" statement - it always contains a single expression which is returned
+	-- Lambda functions come from functional programming languages and the lambda calculus
+	
+RDD code :-
+	-- RDD is read only
+	-- Functions in RDD :-	-- map() function
+				-- reduceByKey() function
+				
+-> Spark Cluster is made up of master and nodes
+
+Spark Context :-
+	-- sc = SparkContext("local", "PySpark RDD example")
+	-- It is the entry gate of apache spark functionality
+
+Parallelize :-
+	-- myRDD = sc.parallelize([('Big Data', 80), ('Python', 85), ('ML', 56), ('Java', 67), ('Web Analytics', 78), ('Good Programming', 76)])
+	-- Once we distribute a dataset, it can be operated on in parallel
+	
+Cyclic Redundancy Check (CRC) :-
+
+RDD Operations :-
+	-- Transformations :-
+		-- Element-wise transformations :-
+			-- Two most common transformations are map() and filter()
+
+Pair RDD or Key/Value Pair RDDs :-
+	-- Transformations in Pair RDDs :-
+		-- reduceByKey
+		-- sortByKey
+		-- groupByKey
+		

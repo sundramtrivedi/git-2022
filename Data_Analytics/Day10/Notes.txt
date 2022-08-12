@@ -1,0 +1,6 @@
+--> Read about kafka
+    https://aws.amazon.com/msk/what-is-kafka/
+
+--> Kafka is an asynchronous platform, which helps to keep ttrack of data in real time
+
+--> 
