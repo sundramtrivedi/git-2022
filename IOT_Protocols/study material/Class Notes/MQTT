@@ -1,0 +1,133 @@
+MQTT
+Default port: 1883 (in secure) 8883 (Secure) 
+OASIS Version: 3.1 | 3.1.1 | 5.0
+Transport layer: TCP/IP
+Communication model - Publish Subscribe 
+
+
+But in MQTT 5.0  Request/Response also possible
+
+Terminology:
+Publisher | Subscriber | Broker
+
+Client: It can have both role(Pub/Sub) at same time
+Message/Payloads/Sensor values- directed via Topics to destination
+building1/room1/sensors/temp
+Almost real time
+
+// MQTT Header
+Control packets:
+	QoS = Quality of Service
+		0 -> Fire n Forget/ At most one delivery
+		1 -> At least one delivery
+		2 -> Exactly one delivery
+
+//Handshake
+
+CLIENT				Server/Broker
+      -------------------->
+	CONNECT COMMAND
+       { Procotol NAme: MQTT
+	 Version: 3.1.1 | 5.0
+         Keep-alive: 60
+       }
+
+     <---------------------
+	   CONNACK
+     
+     ---------------------->
+	SUBSCRIBER COMMAND
+      {
+	QoS: 1
+	Topic: diot
+        ..}
+
+     <---------------------
+	SUBACK
+
+ Reason Code: MQTT 5.0 features:
+	A Reason Code is a one byte unsigned value that indicates the result of an operation.
+
+
+
+Packet Identifier: 
+The Variable Header component of many of the MQTT Control Packet types includes a Two Byte Integer Packet Identifier field 
+
+ Client                                                   Server
+
+PUBLISH Packet Identifier=0x1234 ‒→
+
+                                                      ←‒ PUBLISH Packet Identifier=0x1234
+
+PUBACK Packet Identifier=0x1234 ‒→
+
+// CONNECT FLAGS
+1) Clean Start
+  If a CONNECT packet is received with Clean Start is set to 1, the Client and Server MUST discard any   existing Session and start a new Session
+
+2) Will Flag (Will Delay Interval MQTT 5.0) 
+If the Will Flag is set to 1 this indicates that a Will Message MUST be stored on the Server and associated with the Session. 
+
+
+// CONNECT PROPERTIES
+1) Topic Alias Maximum (MQTT 5.0)
+The Server MUST NOT send a Topic Alias in a PUBLISH packet to the Client greater than Topic Alias Maximum
+
+2) Maximum QoS
+If a Server does not support QoS 1 or QoS 2 PUBLISH packets it MUST send a Maximum QoS in the CONNACK packet specifying the highest QoS it supports [MQTT-3.2.2-9]. A Server that does not support QoS 1 or QoS 2 PUBLISH packets MUST still accept SUBSCRIBE packets containing a Requested QoS of 0, 1 or 2
+
+
+Wildcards ( # , + )
+Mostly used in Topics to generalize them
+
+
+// PUBLISH Packet
+
+1) DUP
+2) QoS
+3) RETAIN
+  If the RETAIN flag is set to 1 in a PUBLISH packet sent by a Client to a Server, the Server MUST replace any existing retained message for this topic and store the Application Message
+
+Topic Name rules:
+1) It MUST be a UTF-8 Encoded String
+2) The Topic Name in the PUBLISH packet MUST NOT contain wildcard characters
+3) The Topic Name in a PUBLISH packet sent by a Server to a subscribing Client MUST match the Subscription’s Topic Filter
+
+Packet Identifier
+The Packet Identifier field is only present in PUBLISH packets where the QoS level is 1 or 2.
+
+Message Expiry Interval (MQTT 5.0 property)
+The Four Byte value is the lifetime of the Application Message in seconds. If absent, the Application Message does not expire.
+
+
+Topic Alias ( MQTT 5.0 feature)
+A Topic Alias is an integer value that is used to identify the Topic instead of using the Topic Name. This reduces the size of the PUBLISH packet, and is useful when the Topic Names are long and the same Topic Names are used repetitively within a Network Connection
+
+Publish Actions
+QoS 0 => None
+QoS 1 => PUBACK
+QoS 2 => PUBREC|
+
+
+// Local mosquitto Broker
+1) downloaded TAR / git clone => version:2.0.14
+2) Building the binaries
+	make
+	or try make WITH_CJSON=no WITH_TLS=no
+3) Run binaries
+   src/mosquitto
+Hint: you can move this to some standard location
+
+// Creating Password Files
+	mosquitto_passwd -c passwd <user>
+# Same file for another user
+	mosquitto_passwd passwd <user2>
+
+//To delete a specific user
+mosquitto_passwd -D /etc/mosquitto/passwd <user1>
+
+
+
+
+
+                                                     ←‒ PUBACK Packet Identifier=0x1234

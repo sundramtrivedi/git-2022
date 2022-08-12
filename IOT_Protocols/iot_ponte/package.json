@@ -1,0 +1,17 @@
+{
+  "name": "iot_ponte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "jsonschema": "^1.1.0",
+    "mqtt": "^4.3.7",
+    "ponte": "0.0.16"
+  }
+}

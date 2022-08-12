@@ -1,0 +1,196 @@
+HTTP ( Hypertext Tranfer Protocol)
+Version 1.1
+Properties: Connection Pattern/Model
+Request - Response (Client Server)
+	Server: Application that exposes services
+	Client: Consume those services
+Transport = TCP/IP 
+Default: 80; (HTTP) Secure Port: 443 ( HTTPS) 
+Custom ports: 3000;8080;
+
+Connectionless property=> 
+Sessionless Property
+
+Connect to server using => URI
+ https://www.localhost.com/user1/email.aspx?id=2
+ 
+ http://www.localhost.com  // Base URI
+ /user1/email.aspx 		// path
+ id=2			// Query
+ 
+ ACCESS MEthods
+ GET PUT POST DELETE
+ 
+ Classification:
+ Safe || Idempotent
+ 
+  +---------+------+------------+---------------+
+   | Method  | Safe | Idempotent | Reference     |
+   +---------+------+------------+---------------+
+   | CONNECT | no   | no         | Section 4.3.6 |
+   | DELETE  | no   | yes        | Section 4.3.5 |
+   | GET     | yes  | yes        | Section 4.3.1 |
+   | HEAD    | yes  | yes        | Section 4.3.2 |
+   | OPTIONS | yes  | yes        | Section 4.3.7 |
+   | POST    | no   | no         | Section 4.3.3 |
+   | PUT     | no   | yes        | Section 4.3.4 |
+   | TRACE   | yes  | yes        | Section 4.3.8 |
+   +---------+------+------------+---------------+
+ 
+ Caching: 
+ no-cache, cache-in-http
+ 
+ Firefox Extension: RESTer
+ 
+Data payload of various kind: MIME Types
+Content-Type
+	application/json
+	application/x-www-form-urlencoded
+
+Authorization: add params in Header of request
+
+Response from Server has codes:
+2.XX: <Success>
+4.XX: <Error> in Client request
+	401: Un Authorized
+	404: Not Found
+5.XX: <Error> in Server
+
+
+
+Programming:
+Nodejs : axios
+
+// POST
+axios({
+	method: "post",
+	url: "https://sleepy-island-07017.heorkuapp.com/sensor",
+	data : {
+		API_KEY: "asdaraehakseahehi",
+		tag: "Kitchen",
+		value: 23.4,
+		unit: "C"
+	},
+	headers: {Authorization: "Bearer aweiaiudhkaeuabkdauekfaef"}
+})
+
+// GET
+axios({
+	method: "get",
+	url: "https://sleepy-island-07017.heorkuapp.com/sensor",
+	headers: {Authorization: "Bearer aweiaiudhkaeuabkdauekfaef"}
+})
+
+
+// DELETE
+axios({
+	method: "delete",
+	url: "https://sleepy-island-07017.heorkuapp.com/users/me",
+	headers: {Authorization: "Bearer aweiaiudhkaeuabkdauekfaef"}
+})
+
+Python: requests
+
+body['API_KEY']=API_KEY
+ payload = json.dumps(body)
+ auth = {'Content-Type':'application/json','Authorization':'Bearer '+TOKEN}
+ result = requests.post(URL,data=payload,headers=auth)
+ 
+ 
+C: libcurl
+
+GET https://api.thingspeak.com/update?api_key=8RX5L8T5XBYAI8AU&field1=24.5
+// Write to a Channel
+axios({
+	method: "get",
+	url: "https://api.thingspeak.com/update",
+	params: {
+    		api_key:8RX5L8T5XBYAI8AU,
+    		field1:24.5
+  	}
+})
+
+// Read a Channel Feed
+GET https://api.thingspeak.com/channels/1756169/feeds.json?api_key=BBBOUMOF4GO5HNK4&results=2
+
+axios({
+	method: "get",
+	url: "https://api.thingspeak.com/channels/1756169/feeds.json",
+	params: {
+    		api_key:BBBOUMOF4GO5HNK4,
+    		results: 2
+  	}
+})
+
+// Read Field Values
+GET https://api.thingspeak.com/channels/1756169/fields/1.json?api_key=BBBOUMOF4GO5HNK4&results=2
+
+axios({
+	method: "get",
+	url: "https://api.thingspeak.com/channels/1756169/fields/1.json",
+	params: {
+    		api_key:BBBOUMOF4GO5HNK4,
+    		results: 2
+  	}
+})
+
+// Python
+
+payload = {
+    		api_key: 8RX5L8T5XBYAI8AU,
+    		field1: 24.5
+  	  }
+
+r = requests.get('https://api.thingspeak.com/update', params=payload)
+print(r)
+
+
+// C
+
+curl -X GET "https://api.thingspeak.com/update?api_key=8RX5L8T5XBYAI8AU&field1=30"
+
+>> it returns total number of entries
+
+libcurl provides two interfaces: Easy and Multi
+Easy>> Synchronous calls
+Multi >> Asynchronous calls
+
+Running the program
+Ubuntu libcurl dependency
+sudo apt-get install libcurl4-openssl-dev
+
+gcc client.c -o client.out -lcurl
+./client.out
+
+Code details>> https://curl.se/libcurl/c/
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
