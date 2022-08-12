@@ -1,0 +1,219 @@
+SELECT * from user_cons_columns;
+
+create table Members
+(
+    member_name varchar2(100) primary key
+);
+
+Insert into Members (member_name) values ('Gaurav');
+
+Insert into Members (member_name) values ('Sagar');
+
+Insert into Members (member_name) values ('Pratik');
+
+Insert into Members (member_name) values ('Hitesh');
+
+select * from Members;
+
+----------------------------------------------------------------------------------------
+
+create table test
+(
+    name varchar2(100),
+    constraint my_first_primary_key primary key (name)
+);
+
+insert into test values ('Payal');
+insert into test values ('Payal');
+
+select * from test;
+
+--------------------------------------------------------------------------------
+
+--- create table named books(book_ISBN(PK), book_title(not null), book_category('C'/'JAVA'), edition, book_barcode_number(unique))
+--- insert 3 rows
+--- 'Let us C', C, 1, 9898
+--- 'Let us C', C, 2, 9696
+--- 'Python Coding', Python, 1, 7878
+--- 'Java code', 'Java', NULL, 65465
+--- NULL, 'C', 3 , 8989
+
+create table books
+(
+    book_ISBN number primary key,
+    book_title varchar2(100) not null,
+    book_category varchar2(100) check (book_category = 'C' OR book_category = 'JAVA'),
+    book_edition number,
+    book_barcode_number number unique
+);
+
+
+insert  all
+
+	into books (book_ISBN, book_title, book_category, book_edition, book_barcode_number) values (101, 'Let us C', 'C', 1, '9898')
+
+	into books (book_ISBN, book_title, book_category, book_edition, book_barcode_number) values (102, 'Let us C', 'C', 2, '9696')
+
+	into books (book_ISBN, book_title, book_category, book_edition, book_barcode_number) values (103, 'Python Coding', 'Python', 1, '7878')
+    
+	into books (book_ISBN, book_title, book_category, book_edition, book_barcode_number) values (104, 'Java code', 'JAVA', NULL, '65465')
+    
+	into books (book_ISBN, book_title, book_category, book_edition, book_barcode_number) values (105, NULL, 'C', 3, '8989')
+
+select * from dual;
+
+select * from books;
+
+----------------------------------------------------------------------------------------
+
+DROP table LMS_members;
+DROP table LMS_book_issue;
+DROP table LMS_fine_details;
+DROP table LMS_book_details;
+DROP table LMS_suppliers_details;
+
+
+create table LMS_members
+(
+    member_id varchar2(10) constraint PK_member_id primary key,
+    member_name varchar2(30) not null,
+    city varchar2(20),
+    date_register date not null,
+    date_expire date not null,
+    membership_status varchar2(15) not null
+);
+
+insert into LMS_members (member_id, member_name, city, date_register, date_expire, membership_status) values ('101', 'Payal', 'Satara', '27-june-2022', '30-jan-2023', 'Active');
+
+insert into LMS_members (member_id, member_name, city, date_register, date_expire, membership_status) values ('102', 'Jeet', 'Mumbai', '15-june-2022', '1-jan-2023', 'Active');
+
+insert into LMS_members (member_id, member_name, city, date_register, date_expire, membership_status) values ('103', 'Sundram', 'Agra', '13-june-2022', '10-jan-2023', 'Active');
+
+insert into LMS_members (member_id, member_name, city, date_register, date_expire, membership_status) values ('104', 'Leekhil', 'Hydrabad', '22-june-2022', '15-jan-2023', 'Active');
+
+select * from LMS_members;
+
+create table LMS_book_issue
+(
+    book_issue_no number constraint PK_book_issue_no primary key,
+    member_id varchar2(10),
+    constraint FK_member_id foreign key (member_id) references LMS_members(member_id),
+    book_code varchar2(10),
+    constraint FK_book_code foreign key (book_code) references LMS_book_details(book_code),
+    date_issue date not null,
+    date_return date not null,
+    date_returned date not null,
+    fine_range varchar2(3),
+    constraint FK_fine_range foreign key (fine_range) references LMS_fine_details(fine_range)
+);
+
+--- alter table LMS_book_issue add constraint FK_fine_range foreign key (fine_range) references LMS_fine_details(fine_range);
+
+--- alter table LMS_book_issue add constraint FK_member_id foreign key (member_id) references LMS_members(member_id);
+
+--- alter table LMS_book_issue add constraint FK_book_code foreign key (book_code) references LMS_book_details(book_code);
+
+insert into LMS_book_issue (book_issue_no, member_id, book_code, date_issue, date_return, date_returned, fine_range) values (201, '101', '001', '1- jan-2021', '10-feb-2021', '9-feb-2021', '111');
+
+insert into LMS_book_issue (book_issue_no, member_id, book_code, date_issue, date_return, date_returned, fine_range) values (202, '102', '002', '11- jan-2021', '11-feb-2021', '10-feb-2021', '222');
+
+insert into LMS_book_issue (book_issue_no, member_id, book_code, date_issue, date_return, date_returned, fine_range) values (203, '103', '003', '12- jan-2021', '12-feb-2021', '12-feb-2021', '333');
+
+insert into LMS_book_issue (book_issue_no, member_id, book_code, date_issue, date_return, date_returned, fine_range) values (204, '104', '004', '13- jan-2021', '13-feb-2021', '13-feb-2021', '444');
+
+select * from LMS_book_issue;
+
+create table LMS_fine_details
+(
+    fine_range varchar2(3) constraint PK_fine_range primary key not null,
+    fine_amount number(10,2) not null,
+    max_days_delayed number
+);
+
+insert into LMS_fine_details (fine_range, fine_amount, max_days_delayed) values ('111', 111, 5);
+
+insert into LMS_fine_details (fine_range, fine_amount, max_days_delayed) values ('222', 222, 5);
+
+insert into LMS_fine_details (fine_range, fine_amount, max_days_delayed) values ('333', 333, 5);
+
+insert into LMS_fine_details (fine_range, fine_amount, max_days_delayed) values ('444', 444, 5);
+
+select * from LMS_fine_details;
+
+create table LMS_book_details
+(
+    book_code varchar2(10) constraint PK_book_code primary key,
+    book_title varchar2(100) not null,
+    category varchar2(15) not null,
+    author varchar2(30) not null,
+    publication varchar2(30) not null,
+    publish_date date not null,
+    book_edition number not null,
+    price number(8,2) not null,
+    rack_num varchar2(10) not null,
+    date_arrival date not null,
+    supplier_id varchar2(30),
+    constraint FK_supplier_id foreign key (supplier_id) references LMS_suppliers_details(supplier_id)
+);
+
+insert into LMS_book_details (book_code, book_title, category, author, publication, publish_date, book_edition, price, rack_num, date_arrival, supplier_id) values ('001', 'Let us C', 'Coding', 'author1', 'publication1', '1-jan-2000', 1, 100, 'rack1', '1-feb-2000', '123');
+
+insert into LMS_book_details (book_code, book_title, category, author, publication, publish_date, book_edition, price, rack_num, date_arrival, supplier_id) values ('002', 'Let us C', 'Coding', 'author1', 'publication1', '1-jan-2000', 1, 100, 'rack1', '1-feb-2000', '456');
+
+insert into LMS_book_details (book_code, book_title, category, author, publication, publish_date, book_edition, price, rack_num, date_arrival, supplier_id) values ('003', 'Let us C', 'Coding', 'author1', 'publication1', '1-jan-2000', 1, 100, 'rack1', '1-feb-2000', '789');
+
+insert into LMS_book_details (book_code, book_title, category, author, publication, publish_date, book_edition, price, rack_num, date_arrival, supplier_id) values ('004', 'Let us C', 'Coding', 'author1', 'publication1', '1-jan-2000', 1, 100, 'rack1', '1-feb-2000', '147');
+
+select * from LMS_book_details;
+
+create table LMS_suppliers_details
+(
+    supplier_id varchar2(3) constraint PK_supplier_id primary key,
+    supplier_name varchar2(30) not null,
+    address varchar2(50) not null,
+    contact number(10) not null,
+    email varchar2(15) not null
+);
+
+insert into LMS_suppliers_details (supplier_id, supplier_name, address, contact, email) values ('123', 'abc', 'asdf', 1234567890, 'abc@gmail.com');
+
+insert into LMS_suppliers_details (supplier_id, supplier_name, address, contact, email) values ('456', 'pqr', 'qwer', 1122334455, 'pqr@gmail.com');
+
+insert into LMS_suppliers_details (supplier_id, supplier_name, address, contact, email) values ('789', 'xyz', 'tyui', 0099887766, 'xyz@gmail.com');
+
+insert into LMS_suppliers_details (supplier_id, supplier_name, address, contact, email) values ('147', 'lmn', 'hjkl', 6655443322, 'lmn@gmail.com');
+
+select * from LMS_suppliers_details;
+
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

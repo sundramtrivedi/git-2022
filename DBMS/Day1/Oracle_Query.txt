@@ -1,0 +1,308 @@
+
+select * from user_objects where OBJECT_TYPE='TABLE';
+SELECT * FROM USER_TABLES;
+select * from user_tab_columns;
+
+create table my_first_table
+(
+rollno number,
+name varchar2(100),
+dob date
+);
+
+
+create table my_second_table
+(
+reg_num number,
+name varchar2(100),
+doe date,
+city varchar2(100),
+
+);
+alter table my_second_table add(event_name varchar2(100));
+alter table my_second_table add(event_owner varchar2(100));
+
+alter table my_second_table drop(event_owner);
+
+alter table my_second_table rename column event_name to event_NM; 
+
+alter table my_second_table add(event_owner varchar2(100)); 
+
+alter table my_second_table drop(event_owner);
+
+ALTER TABLE MY_SECOND_TABLE MODIFY(REG_NUM VARCHAR2(100));
+
+RENAME MY_SECOND_TABLE TO MY_NEW_SECONBD_TABLE;
+RENAME MY_NEW_SECONBD_TABLE TO MY_SECOND_TABLE;
+
+-------------------------------------------------------------------
+insert into my_first_table(rollno,name,dob) 
+values(1,'abc',to_date('01-01-2001','dd-mm-yyyy'));
+
+insert into my_first_table(rollno,name,dob) 
+values(2,'xyz',to_date('02-02-2001','dd-mm-yyyy'));
+
+select * from my_first_table;
+--------------------------------------------------------------------------
+insert into my_second_table(reg_num,name,doe,city,event_nm)
+values(101,'pqr',to_date('27-06-2022','dd-mm-yyyy'),'pune','coding');
+
+insert into my_second_table(reg_num,name,doe,city,event_nm)
+values(101,'pqr',to_date('27-06-2022','dd-mm-yyyy'),'pune','coding');
+
+select * from my_second_table;
+--------------------------------------------------------------------------
+select 1+2 from dual;
+
+select to_date('27-06-2022','dd-mm-yyyy') from dual;
+select to_date('27-jun-2022','dd-mon-yyyy') from dual;
+
+----------------------------------------------------------------------------
+delete from my_second_table where reg_num = '101';
+
+---------------------------------------------------------------------------
+update my_second_table set city = 'banglore' where reg_num = 101;
+
+---------------------------------------------------------------------------
+
+Question:-
+
+--- Insert 4 rows with city pune (2) and banglore (2)
+--- update pune to mumbai
+--- delete all rows that have city as banglore
+
+----------------------------------------------------------------------------
+
+select * from my_third_table;
+
+insert into my_third_table(reg_num, name, doe, city)
+values(101,'abc',to_date('25-06-2022','dd-mm-yyyy'),'pune');
+
+insert into my_third_table(reg_num, name, doe, city)
+values(102,'pqr',to_date('25-06-2022','dd-mm-yyyy'),'pune');
+
+insert into my_third_table(reg_num, name, doe, city)
+values(103,'stu',to_date('25-06-2022','dd-mm-yyyy'),'banglore');
+
+insert into my_third_table(reg_num, name, doe, city)
+values(104,'xyz',to_date('25-06-2022','dd-mm-yyyy'),'banglore');
+
+update my_third_table set city = 'mumbai' where reg_num = 101;
+update my_third_table set city = 'mumbai' where reg_num = 102;
+
+delete from my_third_table where city = 'banglore';
+
+----------------------------------------------------------------------------
+
+
+select * from my_table1;
+
+create table my_table1
+(
+    PRN number,
+    Name varchar2(100),
+    Course varchar2(100),
+    Location varchar2(100)
+);
+
+select * from my_table1;
+
+Insert into my_table1 (PRN, Name, Course, Location) values (101, 'Payal', 'IOT', 'Satara');
+
+select * from my_table1;
+
+Insert into my_table1 (PRN, Name, Course, Location) values (102, 'Sundram', 'IOT', 'Agra');
+
+select * from my_table1;
+
+Insert into my_table1 (PRN, Name, Course, Location) values (103, 'Jeet', 'IOT', 'Mumbai');
+
+select * from my_table1;
+
+Insert into my_table1 (PRN, Name, Course, Location) values (104, 'Leekhil', 'IOT', 'Hydrabad');
+
+select * from my_table1;
+
+rollback;
+
+select * from my_table1;
+
+-------------------------------------------------------------------------
+
+select * from Institution;
+
+create table Institution
+(
+    i_id number,
+    i_name varchar2(100),
+    i_institute varchar2(100),
+    i_city varchar2(100),
+    i_phone_number number
+);
+
+select * from Institution;
+
+Insert into Intitution (i_id, i_name, i_institute, i_city, i_phone_number) values (22, 'Payal', 'CDAC', 'Satara', 123123123);
+
+Insert into Intitution (i_id, i_name, i_institute, i_city, i_phone_number) values (27, 'Sundram', 'MIT', 'Agra', 789789789);
+
+commit;
+
+Insert into Intitution (i_id, i_name, i_institute, i_city, i_phone_number) values (06, 'Jeet', 'IIT', 'Mumbai', 456456456);
+
+rollback;
+
+Insert into Intitution (i_id, i_name, i_institute, i_city, i_phone_number) values (12, 'Leekhil', 'BIT', 'Hydrabad', 369369369);
+
+select * from Institution;
+
+---------------------------------------------------------------------------------------------
+
+select * from Institution;
+
+create table Institution
+(
+    i_id number,
+    i_name varchar2(100),
+    i_institute varchar2(100),
+    i_city varchar2(100),
+    i_phone_number number
+);
+
+select * from Institution;
+
+Insert into Institution (i_id, i_name, i_institute, i_city, i_phone_number) values (22, 'Payal', 'CDAC', 'Satara', 123123123);
+
+Insert into Institution (i_id, i_name, i_institute, i_city, i_phone_number) values (27, 'Sundram', 'MIT', 'Agra', 789789789);
+
+select * from Institution;
+
+commit;
+
+select * from Institution;
+
+Insert into Institution (i_id, i_name, i_institute, i_city, i_phone_number) values (06, 'Jeet', 'IIT', 'Mumbai', 456456456);
+
+select * from Institution;
+
+rollback;
+
+select * from Institution;
+
+Insert into Institution (i_id, i_name, i_institute, i_city, i_phone_number) values (12, 'Leekhil', 'BIT', 'Hydrabad', 369369369);
+
+select * from Institution;
+
+-------------------------------------------------------------------------------------------
+
+Question:-
+
+create table Members
+(
+    member_number number,
+    member_name varchar2(100),
+    member_city varchar2(100),
+    membership_status varchar2(100)
+);
+
+Insert into Members (member_number, member_name, member_city, membership_status) values (101, 'Gaurav', 'Pune', 'Permanent');
+
+Insert into Members (member_number, member_name, member_city, membership_status) values (101, 'Sagar', 'Mumbai', 'Permanent');
+
+Insert into Members (member_number, member_name, member_city, membership_status) values (101, 'Pratik', 'Chennai', 'Temporary');
+
+Insert into Members (member_number, member_name, member_city, membership_status) values (101, 'Hitesh', 'Banglore', 'Temporary');
+
+select * from Members;
+
+select * from Members where upper(membership_status) = upper('Temporary');
+
+---------------------------------------------------------------------------------------------
+
+create table Members
+(
+    member_number number,
+    member_name varchar2(100),
+    member_city varchar2(100),
+    membership_status varchar2(100)
+);
+
+Insert into Members (member_number, member_name, member_city, membership_status) values (101, 'Gaurav', 'Pune', 'Permanent');
+
+Insert into Members (member_number, member_name, member_city, membership_status) values (101, 'Sagar', 'Mumbai', 'Permanent');
+
+Insert into Members (member_number, member_name, member_city, membership_status) values (101, 'Pratik', 'Chennai', 'Temporary');
+
+Insert into Members (member_number, member_name, member_city, membership_status) values (101, 'Hitesh', 'Banglore', 'Temporary');
+
+select * from Members;
+
+select M.member_name Name, M.member_city City,
+'Welcome ' || member_name Welcome_message from Members M where member_name like '%a%';
+
+select M.member_name Name, M.member_city City,
+'Hi ' || member_name Welcome_message from Members M where member_name like '%a%';
+
+---------------------------------------------------------------------------------------------
+
+create table Members1
+(
+    member_number number,
+    member_name varchar2(100) unique,
+    member_city varchar2(100) unique,
+    membership_status varchar2(100) unique
+);
+
+Insert into Members1 (member_number, member_name, member_city, membership_status) values (101, 'Gaurav', 'Pune', 'Permanent');
+
+Insert into Members1 (member_number, member_name, member_city, membership_status) values (102, 'Sagar', 'Mumbai', 'Permanent');
+
+Insert into Members1 (member_number, member_name, member_city, membership_status) values (103, 'Pratik', 'Chennai', 'Temporary');
+
+Insert into Members1 (member_number, member_name, member_city, membership_status) values (104, 'Hitesh', 'Banglore', 'Temporary');
+
+select * from Members;
+
+--------------------------------------------------------------------------------------------
+
+create table check_constraint_not_null
+(
+    age number not null check (age > 18)
+);
+
+Insert into check_constraint_not_null values (19);
+Insert into check_constraint_not_null values (17);
+Insert into check_constraint_not_null values (NULL);
+
+select * from check_constraint_not_null;
+
+--------------------------------------------------------------------------------
+
+create table check_constraint
+(
+    age number check (age > 18)
+);
+
+Insert into check_constraint values (19);
+Insert into check_constraint values (17);
+Insert into check_constraint values (NULL);
+
+select * from check_constraint;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

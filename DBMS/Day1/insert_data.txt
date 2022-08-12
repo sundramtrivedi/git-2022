@@ -1,0 +1,13 @@
+select * from user_objects where OBJECT_TYPE = 'TABLE';
+select * from StudentData;	//table name
+select * from user_tab_columns;
+
+CREATE table StudentData	//tabel name
+(
+	rollno number,
+	name varchar2(100),
+	location varchar(200)
+);
+INSERT into StudentData values('22', 'Payal', 'Satara')	//data insert into table
+INSERT into StudentData values('27', 'Sundram', 'Agra')	//data insert into table
+DELETE FROM StudentData WHERE rollno=27;	//for deleting row from table

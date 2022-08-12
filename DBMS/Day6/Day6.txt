@@ -1,0 +1,177 @@
+// insert any one document 
+// createcollection 
+  
+use DUMMY // switch to a given database 
+show databases 
+
+db.createCollection( "product"); 
+
+show collections
+
+db.getCollectionInfos();
+db.getCollection("product");
+
+// --------- with validator
+db.product.drop();
+db.createCollection( "product"
+,
+{
+   validator: { $jsonSchema: {
+      bsonType: "object",
+     required: [ "product_name", "price" ],
+      properties: {
+               product_name: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+			price: {
+               bsonType: "int",
+               description: "required"
+            }
+      }
+   } }
+}
+
+);
+
+/*
+[ {"name":""} , {"rollno":123} , {"subject":"computer"}]
+
+{
+   validator: { $jsonSchema: {
+      bsonType: "object",
+     required: [ "name"],
+      properties: {
+               name: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            }
+      }
+   } }
+}
+
+
+*/
+
+use demo // switch to demo database 
+
+db.createCollection("my_first_collection")
+show collections;
+
+
+// insert
+insert into demo.my_first_collection (my_first_field) values ('ONE');
+
+db.my_first_collection.insertOne(  { "my_first_field" : "ONE" }   );
+
+alter table demo.my_first_collection  add (my_second_field varchar2(110));
+insert into demo.my_first_collection (my_first_field , my_second_field) values (NULL,'SECOND');
+
+db.my_first_collection.insertOne(  { "my_second_field" : "SECOND" }   );
+db.my_first_collection.insertOne( {
+                                    	"my_first_field": "ONE",
+                                    	"my_second_field": "SECOND"
+                                   }
+                                 );
+
+db.my_first_collection.insertOne( {
+                                    	"my_third_field": "THIRD",
+                                    	"my_fourth_field": "FOURTH"
+                                   }
+                                 );
+
+
+// see insert
+select my_first_field,my_second_field,my_third_field from my_first_collection;
+db.my_first_collection.find({},{my_second_field:1,my_third_field:1,my_first_field:1,_id:0 });
+db.my_first_collection.find({},{my_fourth_field:0,_id:0 });
+
+// insert mutliple documents
+db.my_first_collecton.insertMany(
+[
+	{
+											"my_third_field": "THIRD",
+											"my_fourth_field": "FOURTH"
+	},
+	{
+											"my_third_field": "ONE",
+											"my_fourth_field": "TWO"
+	},
+	{
+											"my_third_field": "ONE",
+											"my_fourth_field": "FOURTH"
+	}
+]
+);
+ 
+show collections
+
+db.my_first_collecton.find();
+
+// correct insert many 
+db.my_first_collection.insertMany(
+[
+	{
+											"my_third_field": "THIRD",
+											"my_fourth_field": "FOURTH"
+	},
+	{
+											"my_first_field": "ONE",
+											"my_second_field": "TWO"
+	},
+	{
+											"my_first_field": "ONE",
+											"my_fourth_field": "FOURTH"
+	}
+]
+);
+
+db.my_first_collection.find();
+
+
+// insert one ( case insensitive ) 
+
+db.my_first_collectIon.insertOne( {
+                                    	"my_third_field": "THIRD",
+                                    	"my_fourth_field": "FOURTH"
+                                   }
+                                 );
+
+
+show collections
+
+// insert my object _id
+
+db.my_first_collectIon.insertOne( {
+                                    	"_id" : 1234567,
+                                    	"my_third_field": "THIRD",
+                                    	"my_fourth_field": "FOURTH"
+                                   }
+                                 ); 
+
+db.my_first_collectIon.insertOne( {
+                                    	"_id" : "My_string",
+                                    	"my_third_field": "THIRD",
+                                    	"my_fourth_field": "FOURTH"
+                                   }
+                                 );   
+
+// this fails because of duplicate _id
+db.my_first_collectIon.insertOne( {
+                                    	"_id" : "My_string",
+                                    	"my_third_field": "THIRD",
+                                    	"my_fourth_field": "FOURTH"
+                                   }
+                                 );   
+                                 
+
+db.my_first_collectIon.find();                                 
+// lets try to insert same _id against different collection 
+db.my_first_collection.insertOne( {
+                                    	"_id" : "My_string",
+                                    	"my_third_field": "THIRD",
+                                    	"my_fourth_field": "FOURTH"
+                                   }
+                                 );   
+                                                                                                                          
+db.my_first_collection.find();    

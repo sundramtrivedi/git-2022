@@ -1,0 +1,23 @@
+select * from user_objects where OBJECT_TYPE = 'TABLE';	//from all columns from user_objects where print only Object_type is table 
+select * from user_tables;	//keep track on table name
+select * from user_tab_columns;	//keep track on table columns
+select * from dual;
+
+CREATE table my_first_table	// table name 
+(
+	// table data
+	rollno number,	//datatype
+	name varchar2(100),
+	dob date
+);
+
+drop table my_first_table;	//to drop the table
+
+alter table my_first_table add (city varchar2(100))	//for add table
+alter table my_first_table drop (city)	//for drop the table entirely
+alter table my_first_table rename column rollno to roll_number	//for rename the table
+alter table my_first_table modify(name varchar2(200))	//for modify the table
+
+select * from my_first_table;
+
+select 1, 'gaurav', to_date('01-jan-2001', 'dd-mm-yyyy') from dual
