@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function min()
+				{
+					var minimum = arguments[0]
+					for (i = 0; i < arguments.length; i++) 
+					{
+						if (arguments[i] < minimum) 
+						{
+							minimum = arguments[i]
+						}
+					}
+					return minimum
+				}
+		</script>
+		<title> JS - 6 </title>
+	</head>
+	<body>
+		<script>
+			var a = parseInt(prompt("Enter the number a :"))
+			var b = parseInt(prompt("Enter the number b :"))
+			var c = parseInt(prompt("Enter the number c :"))
+			console.log(min(a,b,c))
+			document.write(" Minimum number : "+ min(a,b,c))
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function compound()
+			{
+				var ci = ( ( p * Math.pow( 1 + ( r / 100 ) ) ) , t ) - p
+				document.write("Principal : "+ p +"<br>")
+				document.write("Rate of Interest : "+ r +"<br>")
+				document.write("Period in year : "+ t +"<br>")
+				document.write("Compound Interest : "+ ci +"<br>")
+			}
+		</script>
+		<title>  JS - 12 </title>
+	</head>
+	<body>
+		<p>---------------------------------------------------------------------------------------------</p>
+		<p>********************COMPOUND INTEREST********************</p>
+		<p>---------------------------------------------------------------------------------------------</p>
+		<script>
+			var p = parseFloat(prompt("Enter the Principal :"))
+			var r = parseFloat(prompt("Enter the Rate of Interest :"))
+			var t = parseFloat(prompt("Enter the Period in year :"))
+			compound()
+		</script>
+	</body>
+</html>

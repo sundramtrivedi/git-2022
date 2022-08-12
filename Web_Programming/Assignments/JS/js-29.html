@@ -1,0 +1,70 @@
+<!--Payment calculator Create a following web page and calculate Payment Information based on Loan Information. Validate Loan information textfields for numbers and Payment Information textfields should be uneditable. The other constraints are as follows : Amount of Loan should not be more than 15 lakhs. Repayment period should be between 7 yrs to 15 yrs.-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function compute()
+			{
+				var amount = parseFloat(document.getElementById('amount').value)
+				var rate = parseFloat(document.getElementById('rate').value)
+				var period = parseFloat(document.getElementById('period').value)
+				var rateMonth = (rate / 100) / 12
+				var tenureMonth = period * 12
+				let monthly = amount * rateMonth * (Math.pow((1 + rateMonth),tenureMonth) / (Math.pow((1 + rateMonth),tenureMonth) - 1))
+				let totalpay = monthly * (period * 12)
+				let extra = totalpay - amount
+				document.getElementById('pay').innerHTML = monthly
+				document.getElementById('total').innerHTML = totalpay
+				document.getElementById('interest').innerHTML = extra
+			}
+		</script>
+		<title> JS - 29 </title>
+	</head>
+	<body>
+		<form>
+			<table align="center" cellpadding="10px" border="1">
+				<tr>
+					<th colspan="2" align="left">Enter Loan Information : </th>
+				</tr>
+			
+				<tr>
+					<td>1) Amount of the loan (any currency) : </td>
+					<td><input type="number" name="n1" id="amount"></td>
+				</tr>
+			
+				<tr>
+					<td>2) Anuual percentage rate of interest : </td>
+					<td><input type="number" name="n1" id="rate"></td>
+				</tr>
+			
+				<tr>
+					<td>3) Repayment period in year : </td>
+					<td><input type="number" name="n1" id="period"></td>
+				</tr>
+			
+				<tr>
+					<td colspan="2" align="center"><input type="button" name="Compute" value="Compute" onclick="compute()"></td>
+				</tr>
+
+				<tr>
+					<th colspan="2" align="left">Payment Information : </th>
+				</tr>
+			
+				<tr>
+					<td>4) Your monthly payment will be : </td>
+					<td><span id="pay"></span></td>
+				</tr>
+			
+				<tr>
+					<td>5) Your total payment will be : </td>
+					<td><span id="total"></span></td>
+				</tr>
+			
+				<tr>
+					<td>6) Your total interest payments will be : </td>
+					<td><span id="interest"></span></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

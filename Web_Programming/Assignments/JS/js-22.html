@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function count()
+			{
+				let count = 0
+				for(str of arr)
+				{
+					let yes = str.startsWith("www")
+					if(yes == true)
+					{
+						count++
+					}
+				}
+				alert("We have total " + count + " websites starts with 'www'")
+			}
+		</script>
+		<title> JS - 22 </title>
+	</head>
+	<body>
+		<script>
+			let arr = []
+			var num = prompt("Enter the number of websites you want to enter : ")
+			for(i = 0 ; i < num ; i++)
+			{
+				arr[i] = prompt("Enter the website name (start with www) :")
+			}
+			count()
+		</script>
+	</body>
+</html>

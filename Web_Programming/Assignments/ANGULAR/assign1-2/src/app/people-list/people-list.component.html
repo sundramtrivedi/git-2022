@@ -1,0 +1,15 @@
+<body bgcolor="pink">
+    <h1>people-list works!</h1>
+    <table border="1" cellpadding="10px">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr *ngFor = "let p of people">
+            <td>{{p.name}}</td>
+            <td>{{p.age}}</td>
+            <td>{{p.gender}}</td>
+        </tr>
+    </table>
+</body>

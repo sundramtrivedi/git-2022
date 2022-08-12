@@ -1,0 +1,52 @@
+<markup> tags , elements
+
+<html>
+<body>
+<head>
+<b>	<i>	<u>
+<br> - line break
+<hr> - horizontal ruler
+
+headers - <h1>......<h6>
+
+Attributes?
+syntax : <markup attrib1 = "value1" attrub2 = "value2">
+
+<html></html>
+<body></body>
+<head></head>
+<title></title>
+
+container tags :
+--> <div> - division
+--> <p> - paragraph
+--> <span> - colspan and rowspan
+
+List :
+--> <ol> - orderd list
+--> <li> - list items
+--> <ul> - unordered list
+
+table :
+--> <table> - create table
+--> <tr> - create row
+--> <th> - table heading
+--> <td> - table data
+
+Total form elements - 9 + 3
+--> <input type=?>
+
+Text-based :
+	=> text
+	=> password
+	=> hidden
+	
+Button-based :
+	=> button
+	=> submit
+	=> reset
+	
+Misc-based :
+	=> checkbox
+	=> radio
+	=> file

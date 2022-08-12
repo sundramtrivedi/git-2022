@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var a = parseInt(prompt("Enter the 5-digit number :"))
+			let sum = 0
+			while(a != 0)
+			{
+				var rem = a % 10
+	        	sum += rem
+	        	a = Math.floor(a / 10)
+			}
+			document.write("Sum of given 5 digit number :"+ (parseInt(sum)))
+		</script>
+		<title> JS - 5 </title>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!--Assume we have this content in HTML <body>  &&  Also assume we have a array of person names (5 names).Read from array and populate the above list with member names in bullet form.-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.6.0.js"></script>
+		<script>
+			$(document).ready(function()
+			{
+				for(i = 0 ; i < (arr.length) ; i++)
+				{
+					$("#list").append("<li>" + arr[i] + "</li>")
+				}
+				alert("done")
+			})
+		</script>
+		<title> JQuery - 12 and 13 </title>
+	</head>
+	<body>
+		<h3> Members of my Group are </h3>
+		<ol id="list">
+		</ol>
+		<script>
+			let arr = ["John","Steve","Ben","Damon","Ian"]
+		</script>
+	</body>
+</html>

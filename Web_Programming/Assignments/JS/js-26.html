@@ -1,0 +1,37 @@
+<!--Write a program that accepts (from the html form) a positive integer less than 1000 and prints out the sum of the digits of this number. Enter a +ve no less than 1000: -4 Entered number is out of range Enter a +ve no less than 1000: 1234 Entered number is out of range Enter a +ve no less than 1000: 546 Sum of the digits of 546 is 15-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function checkIn() 
+			{
+				var num = document.getElementById("num1").value
+				console.log(num)
+				if(num < 0 || num > 1000)
+				{
+					document.getElementById("s1").innerHTML = "Entered number is out of range"
+				}
+				else
+				{
+					var sum = 0
+					var temp = num
+					while(num != 0)
+					{
+						var rem = Math.floor(num % 10)
+						sum = sum + rem
+						num = num / 10
+					}
+					document.getElementById("s1").innerHTML = "Sum of the digit of " + temp + " is " + sum
+				}
+			}
+		</script>
+		<title> JS - 26 </title>
+	</head>
+	<body>
+		<form align = "center">
+			Number : <input type="number" name="number" id="num1"><br><br>
+			<input type="button" onclick="checkIn()" value="Check">
+			<br><br><span id="s1"></span>
+		</form>
+	</body>
+</html>

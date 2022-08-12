@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function pow(a,b)
+			{
+				var power = 1
+				if(a != 0 && b != 0)
+				{
+					for (i=1; i <= b; i++) 
+					{
+						power *= a  
+					}
+					return power
+				}
+			}
+		</script>
+		<title>  JS - 8 </title>
+	</head>
+	<body>
+		<script>
+			var a = parseInt(prompt("Enter the number :"))
+			var b = parseInt(prompt("Enter the power of the number :"))
+			console.log(pow(a,b))
+			document.write(" "+ a +" ^ "+" "+ b +"="+" "+ pow(a,b))
+		</script>
+	</body>
+</html>

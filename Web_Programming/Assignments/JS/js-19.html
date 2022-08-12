@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<script>
+			let employee = []
+			let totalEmp = parseInt(prompt("Enter the number of Employees you want to enter :"))
+			for(i = 0 ; i < totalEmp ; i++)
+			{
+				data = []
+				data[0] = parseInt(prompt("Enter the Employee ID :"))
+				data[1] = prompt("Enter the Employee Name :")
+				data[2] = parseFloat(prompt("Enter the Employee Salary :"))
+				employee[i] = data
+			}
+			document.write("<table border= 1px solid black width=50% align=center><tr><th width=20%>Employee ID</th><th width=20%>Employee Name</th><th width=20%>Employee Salary</th></tr></table>")
+			for(i = 0 ; i < totalEmp ; i++)
+			{
+				document.write("<table border= 1px solid black width=50% align=center><tr><td width=20%>"+ employee[i][0] +"</td><td width=20%>"+ employee[i][1] +"</td><td width=20%>"+ employee[i][2] +"</td></tr></table>")
+			}
+		</script>
+	</body>
+</html>

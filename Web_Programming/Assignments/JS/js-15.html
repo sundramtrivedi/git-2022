@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function sort_name(a)
+			{
+				a.sort()
+				document.write(" " + a)
+			}
+		</script>
+		<title> JS - 15 </title>
+	</head>
+	<body>
+		<script>
+			var a = [];
+			var size = 5; // Array size
+		 
+			for(var i = 0 ; i < size ; i++) 
+			{
+				a[i] = prompt("Enter array Element : " + (i+1));
+			}
+			//user eneter array
+			console.log(a);
+			sort_name(a)
+		</script>
+	</body>
+</html>

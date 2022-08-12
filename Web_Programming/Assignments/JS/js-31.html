@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function data()
+			{
+				var name = document.getElementById('name').value
+				var bdate = document.getElementById('bdate').value
+				var email = document.getElementById('email').value
+				var gender = document.getElementsByName('gender')
+				var s1 = ""
+				var s2 = ""
+				for(i=0;i<gender.length;i++)
+				{
+					if(gender[i].checked)
+					{
+						s1 = gender[i].value
+					}
+				}
+				var lucky = document.getElementById('lucky').value
+				var food = document.getElementsByName('food')
+				for(i=0;i<food.length;i++)
+				{
+					if(food[i].checked)
+					{
+						s2 += food[i].value + " "
+					}
+				}
+				document.getElementById('span1').innerHTML = "<br><br><table cellpadding='10px'><tr><th>Name : </th><td>"+ name +"</td></tr><tr><th>Birth Date : </th><td>"+ bdate +"</td></tr><tr><th>Email : </th><td>"+ email +"</td></tr><tr><th>Gender : </th><td>"+ s1 +"</td></tr><tr><th>Lucky Number : </th><td>"+ lucky +"</td></tr><tr><th>Favorite Food : </th><td>"+ s2 +"</td></tr></table>"
+			}
+		</script>
+		<title> JS - 31 </title>
+	</head>
+	<body>
+		<form>
+			<table border="1" style="text-align: left;" cellpadding="10px" align="center">
+				<tr>
+					<th>Name : </th>
+					<td><input type="text" name="name" id="name"></td>
+				</tr>
+				<tr>
+					<th>Birth Date : </th>
+					<td><input type="date" name="bdate" id="bdate"></td>
+				</tr>
+				<tr>
+					<th>Email Address : </th>
+					<td><input type="email" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<th>Gender</th>
+					<td>
+						<input type="radio" name="gender" id="male" value="male">Male<br>
+						<input type="radio" name="gender" id="female" value="Female">Female
+					</td>
+				</tr>
+				<tr>
+					<th>Lucky Number : </th>
+					<td><input type="number" name="lucky" id="lucky"></td>
+				</tr>
+				<tr>
+					<th>Favorite Foods : </th>
+					<td>
+						<input type="checkbox" name="food" id="pizza" value="pizza">Pizza<br>
+						<input type="checkbox" name="food" id="pasta" value="pasta">Pasta<br>
+						<input type="checkbox" name="food" id="chinese" value="chinese">Chinese
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="button" value="Send Data" onclick="data()"></td>
+				</tr>
+			</table>
+			<div align="center">
+				<span id="span1" style="color: black;"></span>
+			</div>
+		</form>
+	</body>
+</html>

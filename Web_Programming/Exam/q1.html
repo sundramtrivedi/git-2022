@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			let dataProduct = []
+			class calculate
+			{
+				display()
+				{
+					console.log(dataProduct)
+				}
+			}
+			function product()
+				{
+					var pname = document.getElementById('p1').value
+					var prate = document.getElementById('p2').value
+					var pquant = document.getElementById('p3').value
+					var discount = 0
+					if(pquant < 25)
+					{
+						discount = prate * pquant
+					}
+					else if(pquant >= 25 && pquant < 50)
+					{
+						var total = prate * pquant
+						discount = total - (total * 0.10)
+					}
+					else if(pquant >= 50)
+					{
+						total = prate * pquant
+						discount = total - (total * 0.20)
+					}
+					var data = {Name : pname , Rate : prate , Quantity : pquant , Discount : discount}
+					dataProduct.push(data)
+				}
+				let obj = new calculate()
+		</script>
+		<title> Que - 1 </title>
+	</head>
+	<body>
+		<form>
+			<table border="1" align="center" cellpadding="10px">
+				<tr>
+					<th>Product Name : </th>
+					<td><input type="text" name="name" id="p1"></td>
+				</tr>
+				<tr>
+					<th>Product Rate : </th>
+					<td><input type="number" name="rate" id="p2"></td>
+				</tr>
+				<tr>
+					<th>Product Quantity : </th>
+					<td><input type="number" name="quant" id="p3"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="button" name="Add" value="Add" onclick="product()"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="button" name="Display" value="Display" onclick="obj.display()"></td>
+				</tr>
+			</table>
+		</form>
+		<span id="span1"></span>
+	</body>
+</html>

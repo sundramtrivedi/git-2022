@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			span
+			{
+				color: red;
+			}
+		</style>
+		<script>
+			function validate_name()
+			{
+				var name = document.getElementById('name').value
+				if(name == null || name == "" || name.length == 0)
+				{
+					alert("Name is required")
+				}
+				else if(name.length < 6)
+				{
+					document.getElementById("cust").innerHTML = "Customer Name can not be < 6 characters"
+				}
+			}
+			function validate_date()
+			{
+				var date1 = new Date(document.getElementById("bdate").value)
+				var date2 = new Date(document.getElementById("sdate").value)
+				if(date1 > date2)
+				{
+					document.getElementById("billing").innerHTML = "billing date cant be greater than s date"
+				}
+			}
+			function display() 
+			{
+				var order_id = document.getElementById("order").value
+				var name = document.getElementById("name").value
+				var billing_date = document.getElementById("bdate").value
+				var shipping_date = document.getElementById("sdate").value
+				var order_total = document.getElementById("total").value
+				document.getElementById("span1").innerHTML = "<br><br><table cellpadding='10px'><tr><th>Order ID : </th><td>"+ order_id +"</td></tr><tr><th>Customer Name : </th><td>"+ name +"</td></tr><tr><th>Enter Billing Date : </th><td>"+ billing_date +"</td></tr><tr><th>Enter Billing Date : </th><td>"+ shipping_date +"</td></tr><tr><th>Order Total : </th><td>"+ order_total +"</td></tr></table>"
+			}
+		</script>
+		<title> JS - 30 </title>
+	</head>
+	<body>
+		<form>
+			<table border="1" align="center" cellpadding="10px">
+				<tr>
+					<th>Order ID : </th>
+					<td><input type="text" name="orderID" id="order"></td>
+				</tr>
+				<tr>
+					<th>Customer Name : </th>
+					<td><input type="text" name="custName" id="name" onchange="validate_name()"><span id="cust"></span></td>
+				</tr>
+				<tr>
+					<th>Enter Billing Date : </th>
+					<td><input type="date" name="billingDate" id="bdate"><span id="billing"></span></td>
+				</tr>
+				<tr>
+					<th>Enter Shipping Date : </th>
+					<td><input type="date" name="shippingDate" id="sdate" onchange="validate_date()"></td>
+				</tr>
+				<tr>
+					<th>Order Total : </th>
+					<td><input type="number" name="orderTotal" id="total"></td>
+				</tr>
+				<tr>
+					<th colspan="2"><input type="button" value="Display" id="dis" onclick="display()"></th>
+				</tr>
+			</table>
+			<div align="center">
+				<span id="span1" style="color: black;"></span>
+			</div>
+		</form>
+	</body>
+</html>

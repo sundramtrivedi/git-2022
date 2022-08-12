@@ -1,0 +1,5 @@
+let greet1 = require("./greet1.js")
+greet1.greet()
+let add1 = require("./add.js")
+add1.add()
+console.log(add1.add(10,20))

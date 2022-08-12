@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function fibo()
+			{
+				var t1 = 0
+				var t2 = 1
+				var next = t1 + t2
+				if (a != 0) 
+				{
+					document.write(" "+ t1 +" "+ t2)
+					for (i = 3; i <= a; i++) 
+					{
+						document.write(" "+ next)
+						t1 = t2
+					    t2 = next
+					    next = t1 + t2
+					}
+				}
+			}
+		</script>
+		<title>  JS - 11 </title>
+	</head>
+	<body>
+		<script>
+			var a = parseInt(prompt("Enter the last number :"))
+			fibo()
+		</script>
+	</body>
+</html>

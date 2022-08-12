@@ -1,0 +1,30 @@
+<p align = "center">people-list works!</p>
+<form>
+    <table border="1" align="center" cellpadding="10px">
+        <tr>
+            <th>Order ID : </th>
+            <td><input type="text" name="orderID" [(ngModel)]="orderid"></td>
+        </tr>
+        <tr>
+            <th>Customer Name : </th>
+            <td><input type="text" name="custName" id="name" [(ngModel)]="custname"><span id="cust"></span></td>
+        </tr>
+        <tr>
+            <th>Enter Billing Date : </th>
+            <td><input type="date" name="billingDate" [(ngModel)]="billingdate" id="bdate"><span id="billing"></span></td>
+        </tr>
+        <tr>
+            <th>Enter Shipping Date : </th>
+            <td><input type="date" name="shippingDate" [(ngModel)]="shippingdate" id="sdate" ></td>
+        </tr>
+        <tr>
+            <th>Order Total : </th>
+            <td><input type="number" name="orderTotal" [(ngModel)]="ordertotal" id="total"></td>
+        </tr>
+    </table>
+    {{"Order ID : " + orderid}}<br>
+    {{"Customer Name : " + custname}}<br>
+    {{"Billing Date : " + billingdate}}<br>
+    {{"Shipping Date : " + shippingdate}}<br>
+    {{"Order Total : " + ordertotal}}<br>
+</form>

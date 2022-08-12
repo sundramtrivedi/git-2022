@@ -1,0 +1,5 @@
+let Student = require("./constructor1")
+let s = new Student("Payal", 23)
+let s1 = new Student("Jeet", 27)
+s.display()
+s1.display()

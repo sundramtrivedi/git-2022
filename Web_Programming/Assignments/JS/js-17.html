@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			class Rectangle
+			{
+				constructor(length,breadth)
+				{
+					this.length = length
+					this.breadth = breadth
+				}
+				area()
+				{
+					document.write("Area Of Rectangle : "+ (this.length * this.breadth) + "<br>")
+				}
+				perimeter()
+				{
+					document.write("Perimeter Of Rectangle : "+ (2 * (this.length + this.breadth)) + "<br>")
+				}
+			}
+			class Circle
+			{
+				constructor(radius)
+				{
+					this.radius = radius
+				}
+				area()
+				{
+					document.write("Area Of Circle : "+ (Math.PI * this.radius * this.radius) + "<br>")
+				}
+				circumference()
+				{
+					document.write("Circumeference Of Circle : "+ (2 * (Math.PI) * thisradius) + "<br>")
+				}
+			}
+		</script>
+		<title> JS - 17 </title>
+	</head>
+	<body>
+		<script>
+			var r1 = new Rectangle(10,20)
+			var c1 = new Circle(10)
+			r1.area()
+			r1.perimeter()
+			c1.area()
+			c1.circumference()
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function rev(arr)
+			{
+				for(i = 0 ; i < 5 ; i++)
+				{
+					wordStrings = arr[i].split("")
+					reverseArray = wordStrings.reverse()
+					joinArray = reverseArray.join("")
+					arr[i] = joinArray
+				}
+				arr.sort()
+				document.write("The sorted array :<br>")
+				for (i = 0; i < 5; i++) 
+				{
+					document.write(arr[i] + "<br>")
+				}
+			}
+		</script>
+		<title> JS - 18 </title>
+	</head>
+	<body>
+		<script>
+			let arr = []
+			for(i = 0 ; i < 5 ; i++)
+			{
+				arr[i] = prompt("Enter the string :")
+			}
+			rev(arr)
+		</script>
+	</body>
+</html>

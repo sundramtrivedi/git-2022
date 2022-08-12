@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function calculate(num)
+			{
+				var sum = 0
+				for(i = 0 ; i < num ; i++)
+				{
+					sum += arr[i]
+				}
+				document.write("Sum : " + sum + "<br>")
+				var avg = sum / num
+				document.write("Average : " + avg + "<br>")
+			}
+			function sq(num)
+			{
+				document.write("Square Of Arrays :" + "<br>")
+				for(i = 0 ; i < num ; i++)
+				{
+					let data = []
+					data[0] = document.write(" " + arr[i] + "=" + " " + (arr[i] * arr[i]) + "<br>")
+					arr1[i] = data	
+				}
+			}
+		</script>
+		<title> JS - 21 </title>
+	</head>
+	<body>
+		<script>
+			let arr = []
+			let arr1 = []
+			var num = parseInt(prompt("Enter the number you want to enter in array :"))
+			for(i = 0 ; i < num ; i++)
+			{
+				arr[i] = parseInt(prompt("Enter the number :"))
+			}
+			calculate(num)
+			sq(num)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function times_table() 
+			{
+				let start = parseInt(document.getElementById("start").value)
+				let end = parseInt(document.getElementById("end").value)
+				let multi = parseInt(document.getElementById("multi").value)
+				let str = ""
+				for(var i = start ; i <= end ; i++)
+				{
+					str += (String(i) + "  times  " + String(multi) + "  =  " + (i * multi) + "\n")
+				}
+				document.getElementById("times").innerHTML = str
+			}
+		</script>
+		<title> JS - 24 </title>
+	</head>
+	<body>
+		<center>
+			Start Number : <input type="number" name="start" id="start">
+			End Number : <input type="number" name="end" id="end">
+			Multiply by : <input name="multi" id="multi"><br>
+			<br><input type="button" value="Times Table" onclick="times_table()"><br>
+			<br><input type="reset" value="Reset"><br><br>
+			<textarea cols="100" rows="30" id="times"></textarea>
+		</center>
+	</body>
+</html>

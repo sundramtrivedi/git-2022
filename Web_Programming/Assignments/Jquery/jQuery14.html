@@ -1,0 +1,50 @@
+<!--Create a web page that accepts person name, age and whether employed (true/false) using HTML form elements.On clicking “add” button, create a JSON obj with the person details. Add (push()) this json into an array. Provide another button “display” which will iterate thru array and display all persons details in a neat HTML table.-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.6.0.js"></script>
+		<script>
+			var arr = []
+			function add()
+			{
+				let pname = document.getElementById("pname").value
+				let age = document.getElementById("age").value
+				let emp = document.getElementsByName("employed")
+				for(i=0;i<emp.length;i++)
+				{
+					if(emp[i].checked)
+					{
+						var s1 = emp[i].value
+					}
+					var firstobj = {Name:pname,Age:age,Employed:s1}
+				}
+				console.log(firstobj)
+				arr.push(firstobj)
+			}
+			function display()
+			{
+				str = ""
+				str = "<table border = 1><tr><th>Name</th><th>Age</th><th>Employee Status</th></tr>"
+				for(i=0;i<arr.length;i++)
+				{
+					str += ("<tr><td>"+ arr[i].Name +"</td><td>"+ arr[i].Age +"</td><td>"+ arr[i].Employed +"</td></tr>")
+				}
+				str += "</table>"
+				$("#dis").html(str)
+				//$("#dis").css('border-collapse','collapse')
+			}
+		</script>
+		<title> JQuery - 14 </title>
+	</head>
+	<body>
+		<center>
+		Name : <input type="text" name="name" id="pname"><br><br>
+		Age : <input type="number" name="age" id="age"><br><br>
+		Employed : <input type="radio" name="employed" value="true">True
+			<input type="radio" name="employed" value="false">False<br><br>
+		<input type="button" name="add" value="Add" onclick="add()"><br><br>
+		<input type="button" name="display" value="Display" onclick="display()"><br><br>
+		<span id="dis"></span>
+		</center>
+	</body>
+</html>

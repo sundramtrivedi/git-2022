@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function search()
+			{
+				$(document).ready(function()
+				{
+					var s = document.getElementById('s1').value
+					for(i=0;i<arr.length;i++)
+					{
+						if(arr[i] == s)
+						{
+							$("")
+						}
+					}
+				})
+			}
+		</script>
+		<title> Que - 2 </title>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<th>Names</th>
+				<th>Post</th>
+			</tr>
+			<tr align="center">
+				<td id="n1">Anil Patil</td>
+				<td>Training</td>
+			</tr>
+			<tr align="center">
+				<td id="n1">Kavita Patil</td>
+				<td>HR</td>
+			</tr>
+			<tr align="center">
+				<td id="n1">Anita Singh</td>
+				<td>Marketing</td>
+			</tr>
+			<tr align="center">
+				<td id="n1">Ved Kulkarni</td>
+				<td>Marketing</td>
+			</tr>
+			<tr align="center">
+				<td colspan = "2">Search : <input type="text" name="search" id="s1"></td>
+			</tr>
+			<tr align="center">
+				<td><input type="button" name="search" value="Search" onclick="search"></td>
+				<td><input type="reset" name="reset" value="Reset"></td>
+			</tr>
+		</table>
+	</body>
+</html>

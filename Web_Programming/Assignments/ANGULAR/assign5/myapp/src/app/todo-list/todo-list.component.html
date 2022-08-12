@@ -1,0 +1,11 @@
+<p>todo-list works!</p>
+<h1>TO-DO LIST</h1>
+<hr>
+<input type="text" name="todo" placeholder="Add items" #str>
+<input type="button" name="Add" value="ADD" (click)="display(str.value)">
+<ul>
+    <li *ngFor="let name of list">
+        {{name}}
+    </li>
+</ul>
+<br><br>

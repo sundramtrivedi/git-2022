@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function result()
+			{
+				let rt1 = document.getElementById("t1").value
+				let rt2 = document.getElementById("t2").value
+				let rt3 = document.getElementById("t3").value
+				var string1 = ""
+				var string2 = ""
+				var list = document.getElementsByName("ot")
+				for(i=0;i<list.length;i++)
+				{
+					if(list[i].checked)
+					{
+						string1=list[i].value
+						if(string1 == "ss")
+						{
+							var i
+							var j
+							var l=rt2.length
+							for(i=0,j=0;rt1[i]!=null && rt2[j]!=null;i++)
+							{
+								if(rt1[i] == rt2[j])
+									{
+										j++
+									}
+									else
+									{
+										j = 0
+									}
+								}
+							if(j==l)
+							{
+								string2 += "Sub-String is found!"
+							}
+							else
+							{
+								string2 += "Sub-String is not found!"
+							}
+							document.getElementById("dis").innerHTML = "<h3>" + string2 + "</h3>" 
+						}
+						else if(string1 == "upper")
+						{
+							var upp = rt1.toUpperCase()
+							document.getElementById("dis").innerHTML = "<h3>" + upp + "</h3>" 
+						}
+						else if(string1 == "lower")
+						{
+							var low = rt1.toLowerCase()
+							document.getElementById("dis").innerHTML = "<h3>" + low + "</h3>"
+						}
+						else if (string1 == "trim") 
+						{
+							remove = rt1.split(" ")
+							tri = remove.join("")
+							document.getElementById("dis").innerHTML = "<h3>" + tri + "</h3>"
+						}
+						else if(string1 == "concat")
+						{
+							document.getElementById("dis").innerHTML = "<h3>" + rt1 + rt2 + "</h3>"
+						}
+						else if(string1 == "replace")
+						{
+							var re = rt1.replace(rt2,rt3)
+							document.getElementById("dis").innerHTML = "<h3>" + re + "</h3>"
+						}
+					}
+				}
+			}
+		</script>
+		<title> JS - 25 </title>
+	</head>
+	<body>
+		<center>
+			Enter the String : <input type="text" name="string" id="t1"><br><br>
+			Enter the Sub-string : <input type="text" name="sub-string" id="t2"><br><br>
+			Replace with String : <input type="text" name="string" id="t3"><br><br>
+			<input type="radio" id="r1" name="ot" value="ss">Search sub-string in main string
+			<input type="radio" id="r2" name="ot" value="upper">To upper case
+			<input type="radio" id="r3" name="ot" value="lower">To lower case
+			<input type="radio" id="r4" name="ot" value="trim">Trim spaces
+			<input type="radio" id="r5" name="ot" value="concat">Concatenate
+			<input type="radio" id="r6" name="ot" value="replace">Replace
+			<br><br><input type="button" name="Submit" value="Submit Query" onclick="result()">
+			<br><br><span id="dis"></span>
+		</center>
+	</body>
+</html>

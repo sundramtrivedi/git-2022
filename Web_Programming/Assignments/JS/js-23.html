@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function calculate()
+			{
+				let rad = parseInt(document.getElementById("rad").value)
+				document.getElementById("area").innerHTML = Math.PI * Math.pow(rad,2)
+				document.getElementById("circum").innerHTML = 2 * Math.PI * rad
+			}
+		</script>
+		<title> JS - object - 23 </title>
+	</head>
+	<body>
+		<form>
+			Enter Radius : <input type="rad" id="rad"><br><br>
+			<input type="button" value="Calculate" onclick="calculate()"><br><br>
+			Area Of Circle : <span id="area"></span><br><br>
+			Circumference of Circle : <span id="circum"></span><br><br>
+		</form>
+	</body>
+</html>

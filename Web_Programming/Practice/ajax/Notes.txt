@@ -1,0 +1,12 @@
+AJAX (Asynchronous Javascript And XML)
+--> It is a combination of html,css,javascript,dom,xml,xhr
+--> AJAX is not a programming language,but a technique for making the user interfaces of web applications more responsive and interactive
+------------------------------------------------------------------------------------------------
+1) Obtain XHR object
+	let xhr = XMLHttpRequest();
+
+2) Open connection to server
+	XHRHttp.open("GET","demo_get.asp",true);
+	XHRHttp.send();
+------------------------------------------------------------------------------------------------
+

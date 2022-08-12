@@ -1,0 +1,6 @@
+<p>stud works!</p>
+<h1>STUDENT</h1>
+<ul *ngFor = "let name of stud">
+   <li *ngIf="name[0] == 'S'" style="font-weight: bold;">{{name}}</li>
+   <li *ngIf="name[0] != 'S'">{{name}}</li>
+</ul>

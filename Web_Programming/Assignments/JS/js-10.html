@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function even(a)
+			{
+				var sum = 0
+				if (a != 0) 
+				{
+					for (i = 1; i <= a; i++) 
+					{
+						if(i % 2 == 0)
+						{
+							var sq = i * i
+							sum = sum + sq
+						}
+					}
+					document.write(" "+ sum +"<br>")
+				}
+			}
+		</script>
+		<title>  JS - 10 </title>
+	</head>
+	<body>
+		<script>
+			var a = parseInt(prompt("Enter the number n :"))
+			even(a)
+		</script>
+	</body>
+</html>
