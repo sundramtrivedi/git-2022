@@ -1,0 +1,159 @@
+ 
+IETF is an acronym for ________________. *
+1/1
+A. Internet Engineering Test Force
+B. Internet Engineering Task Force
+ 
+C. Intelligent Engineering Task Force
+D. International Engineering Task Force
+ 
+What are the things that have created perfect storm for building rapid IoT Solutions? *
+1/1
+A. Broadband Internet is become more widely available.
+B. More devices are being created with Wi-Fi capabilities sensors built into them.
+C. Technology costs are going down.
+D. All of the above.
+ 
+ 
+According to IoT-A which one is true? *
+1/1
+A. Concrete Architecture is Architectural reference model.
+B. Best practice from Concrete Architecture is Architectural reference model.
+C. Best practice from Architectural reference model is Concrete Architecture.
+ 
+D. There are so many IoT verticals hence architecture reference model doesn’t require for IoT system design.
+ 
+Who Invented the term IoT? *
+1/1
+A. Kevin Ashton
+ 
+B. Mark Weise
+C. Marissa Mayer
+D. Jerry Yang
+ 
+Hydraulic actuator uses _______________ to generate motion. *
+1/1
+A. External power source
+B. Liquid
+ 
+C. Heat Source
+D. Compressed Air
+ 
+Which of the following is not a key characteristic for IoT stacks? *
+1/1
+A. Loosely coupled.
+B. Modular.
+C. Tightly coupled.
+D. Platform Dependent.
+ 
+ 
+Which of the following protocol runs at router that allocates dynamic IP addresses to Wi-Fi enabled station devices? *
+1/1
+A: DHCP
+ 
+B: DNS
+C: ICMP
+D: NAT
+ 
+Which of the following software is used “mostly” in constrained IoT devices? *
+1/1
+A. Embedded Operating System (EOS)
+B. Real Time Operating System (RTOS)
+C. Firmware
+ 
+D. General Purpose Operating System (GPOS)
+ 
+Which type of cloud service will be best suited for IoT application development? *
+1/1
+A. Software As a Service (SAAS)
+B. Platform as a Services (PAAS)
+ 
+C. Infrastructure as a Service (IAAS)
+D. Network as a Services (NAAS)
+ 
+Which of the following sensing unit can be used for real time Location system (RTLS)? *
+1/1
+A. RFID
+ 
+B. NFC
+C. DHT22
+D. DS18B20
+ 
+Which of the following standard provides technical documentation for MQTT protocol? *
+1/1
+A. SIG
+B. OASIS
+ 
+C. IEEE
+D. IETF
+ 
+Which of the following is IEEE standard for Wi-Fi communication? *
+1/1
+A. IEEE 802.3
+B. IEEE 802.15
+C. IEEE 802.11
+ 
+D. IEEE 802.16
+ 
+Which of the following device is categorized as Single Board Computer? *
+1/1
+A. ESP32
+B. NodeMCU – ESP8266
+C. Raspberry PI - 4
+ 
+D. Intel i5 based device running General Purpose Operating System
+ 
+Which of the following Linux utility is used to check the presence of a device over a network? *
+1/1
+A. ping
+ 
+B. ifconfig
+C. netstat
+D. setfacl
+ 
+Which of the following is Long Range Communication technology? *
+1/1
+A. ZigBee
+B. Wi-Fi
+C. NBIoT
+ 
+D. BTLE
+ 
+Which of the following protocol is used to map MAC address to IP Address? *
+1/1
+A. NAT
+B. DHCP
+C. ARP
+ 
+D. ICMP
+ 
+Which of the following is popular low power wireless technology that is used in smart bands and medical devices? *
+1/1
+A. ZigBee
+B. Wi-Fi
+C. RFID
+D. BLE/BTLE
+ 
+ 
+Which of the following is best suited power source for enabling power harvesting solutions in IoT devices? *
+1/1
+A. Lithium IoT batteries
+B. AC Power Supply
+C. DC Power Supply
+D. Solar panel enabled batteries
+ 
+ 
+Which of the following device is layer-3 IoT devices? *
+1/1
+A. Wi-Fi Enabled IoT Devices
+B. BTLE Enabled IoT Device
+ 
+C. NBIoT Enabled IoT Device
+D. 4G Enabled IoT Device
+ 
+Which of the following open API standard helps to create REST API documentation? *
+1/1
+A. XML
+B. SoAP
+C. Oauth
+D. Swagger

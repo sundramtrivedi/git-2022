@@ -1,0 +1,274 @@
+    1  sudo apt-get update
+    2  sudo apt-get upgrade
+    3  cd $HOME
+    4  ls
+    5  cd DIOT_Lect
+    6  ls
+    7  cd python
+    8  ls
+    9  python simple_calculator.py
+   10  python3
+   11  python simple_calculator.py
+   12  python3 simple_calculator.py
+   13  sudo apt install net-tools
+   14  sudo apt install xournal
+   15  sudo apt install visual
+   16  sudo apt install classic code
+   17  sudo snap install --classic code
+   18  cd $HOMe
+   19  pwd
+   20  ls
+   21  cd DIOT_Lect
+   22  ls
+   23  cd python
+   24  ls
+   25  cd day1
+   26  ls
+   27  python day_of_week.py
+   28  python3 day_of_week.py
+   29  python3 greater_4.py
+   30  python3 even_odd.py
+   31  python3 print.py
+   32  python3 while_loop.py
+   33  echo "This is my test file"
+   34  echo "This is my test file"> test_data.txt
+   35  ls
+   36  echo "IOT is next gen tech" >> test_data.txt
+   37  cat test_data.txt
+   38  ls
+   39  rm test_data.txt
+   40  ls
+   41  mkdir test_dir && cd test_dir && touch 1.txt
+   42  tree
+   43  sudo apt install tree
+   44  mkdir test_dir && cd test_dir && touch 1.txt
+   45  tree
+   46  cd $HOME
+   47  pwd
+   48  ls
+   49  cd DIOT_Lect
+   50  ls
+   51  cd embedded_linux
+   52  ls
+   53  cd day3
+   54  ls
+   55  cd..
+   56  cd ..
+   57  cd..
+   58  cd .
+   59  cd ..
+   60  cd $HOME
+   61  cd DIOT_Lect
+   62  cd embedded_linux
+   63  echo "Hii Payal!"
+   64  echo "Hii Payal!" > ../day3/test.txt
+   65  echo "Hii Payal!" > ../embedded_linux/day3/test.txt
+   66  ls
+   67  tree
+   68  cd day3
+   69  mkdir question
+   70  ls
+   71  cd question
+   72  mkdir -p 1/2/3
+   73  tree
+   74  echo "IOT is awesome" > ../question/1/1.txt
+   75  ls
+   76  tree
+   77  cd 3
+   78  ls
+   79  cd ..
+   80  ls
+   81  cd question
+   82  ls
+   83  cd 1
+   84  cd 2
+   85  ls
+   86  echo "IOt is awesome" > ../../2.txt 
+   87  tree
+   88  cd ..
+   89  tree
+   90  cd 1
+   91  cd 2
+   92  cd 3
+   93  echo "IOt is awesome" > ../../3.txt 
+   94  cd ..
+   95  tree
+   96  cd 1
+   97  cd 2
+   98  cd 3
+   99  echo "IOt is awesome" > ../../1.txt 
+  100  cd ..
+  101  tree
+  102  echo "IOT" >2/3/3.txt
+  103  cho "IOT" >1/2/3/3.txt
+  104  echo "IOT" >1/2/3/3.txt
+  105  tree
+  106  cd 1/2/3
+  107  mkdir ../../iot
+  108  cd ..
+  109  tree
+  110  cd ..
+  111  cd$HOME
+  112  cd $HOME
+  113  ls -a
+  114  ls -l
+  115  ls -lh
+  116  ls -r
+  117  ls -R
+  118  ls -lt
+  119  cd $HOME
+  120  pwd
+  121  ls
+  122  cd DIOT_Lect
+  123  ls
+  124  cd python
+  125  ls
+  126  cd day2
+  127  python3 odd.py
+  128  python3 string.py
+  129  python3 string1.py
+  130  python3 substring.py
+  131  ls
+  132  python3 substring.py
+  133  python3 string1.py
+  134  python3 substring.py
+  135  python3 str_palin.py
+  136  python3 int_palin.py
+  137  cd home/DIOt_lect/python/day2
+  138  cd $HOME
+  139  ls
+  140  cd DIOT_lect/python/day2
+  141  cd DIOT_lect
+  142  ls
+  143  cd DIOT_lect/
+  144  cd $HOME
+  145  pwd
+  146  ls
+  147  cd DIOT_Lect
+  148  cd python
+  149  cd day2
+  150  python3 substr.py
+  151  python3 str_int.py
+  152  cd $HOME
+  153  cd DIOT_Lect
+  154  cd python
+  155  cd day3
+  156  cd day2
+  157  python3 str_palin.py
+  158  python3 substr.py
+  159  python3 str_alpha.py
+  160  python3 substr.py
+  161  python3 list.py
+  162  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  163  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  164  cat /etc/apt/sources.list.d/google-chrome.list
+  165  sudo apt install ./google-chrome-stable_current_amd64.deb
+  166  cd $HOME
+  167  cd DIOT_Lect
+  168  cd python
+  169  cd day2
+  170  python3 separate.py
+  171  python3 search.py
+  172  python3 separate.py
+  173  python3 search.py
+  174  cd $home
+  175  pwd
+  176  ls
+  177  cd DIOT_Lect
+  178  cd python
+  179  cd day2
+  180  python3 student_data.py
+  181  python3 reverse.py
+  182  cd $HOME
+  183  cd DIOT_Lect
+  184  cd embedded_linux
+  185  mkdir day4
+  186  ls
+  187  cd day4
+  188  tty
+  189  tty
+  190  cd $HOME
+  191  cd DIOT_Lect
+  192  cd embedded_linux
+  193  cd day4
+  194  echo "1" > day4/file1.txt && echo "3" > day4/file2.txt && echo "5" > day4/file3.txt
+  195  cd ..
+  196  echo "1" > day4/file1.txt && echo "3" > day4/file2.txt && echo "5" > day4/file3.txt
+  197  ls
+  198  tree
+  199  cat file1.txt
+  200  cd day4
+  201  tree
+  202  cat file1.txt file2.txt file3.txt
+  203  echo "3" >> "4"
+  204  cat file1.txt file2.txt file3.txt
+  205  cd ..
+  206  echo "3" >> "4" /day4/file2.txt && echo "5" >> "6" /day4/file3.txt
+  207  cat file1.txt file2.txt file3.txt
+  208  cd day4
+  209  cat file1.txt file2.txt file3.txt
+  210  cd ..
+  211  echo "2" >> day4/file1.txt && echo "4" >> day4/file2.txt && echo "6" >> day4/file3.txt
+  212  cd day4
+  213  cat file1.txt file2.txt file3.txt
+  214  cat file1.txt file2.txt file3.txt > resul.txt
+  215  cat result.txt
+  216  ls
+  217  cat resul.txt
+  218  echo "Communication between /dev/pts/1"
+  219  tty
+  220  echo "Communication between /dev/pts/1"
+  221  tty
+  222  echo "Communication between /dev/pts/0"
+  223  echo "Communication between /dev/pts/0" > /dev/pts/0
+  224  PS1='\W\$'
+  225  tty
+  226  cat 1.txt
+  227  cd $HOME
+  228  cd DIOT_Lect
+  229  cd embedded_linux
+  230  cd day4
+  231  ls
+  232  file1.txt
+  233  cd file1.txt
+  234  ls
+  235  cat 1.txt
+  236  cat file1.txt
+  237  hi
+  238  cat file2.txt > result2.txt
+  239  cat file1.txt > result2.txt
+  240  cat result2.txt
+  241  cat file2.txt >> result2.txt
+  242  cat file1.txt >> result2.txt
+  243  cat result2.txt
+  244  cat file1.txt > result2.txt
+  245  cat file2.txt >> result2.txt
+  246  cat result2.txt
+  247  tree
+  248  cd ..
+  249  tree
+  250  cd day4
+  251  cat
+  252  cat mylearning.txt
+  253  cat >> mylearning.txt
+  254  cat mylearning.txt
+  255  cat >> payal.txt
+  256  cat payal.txt
+  257  cat >> payal.txt
+  258  c
+  259  cat payal.txt
+  260  cat >> payal.txt
+  261  cat payal.txt
+  262  cat < quote.txt
+  263  cat >> quote.txt
+  264  cat quote.txt
+  265  cat >> quote.txt >> hardworking is key to success
+  266  cat >> quotes.txt
+  267  cat quote.txt
+  268  cat quotes.txt
+  269  cat >> quote.txt
+  270  cat quote.txt
+  271  cat < quote.txt
+  272  cat < quote.txt > quote1.txt
+  273  cat quote1.txt
+  274  history > ajkagyaan.txt

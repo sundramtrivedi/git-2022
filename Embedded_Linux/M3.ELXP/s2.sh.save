@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Learning file permission" | s1.sh

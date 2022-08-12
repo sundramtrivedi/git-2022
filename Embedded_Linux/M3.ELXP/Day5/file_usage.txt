@@ -1,0 +1,26 @@
+Filesystem     Inodes IUsed IFree IUse% Mounted on
+udev             971K   613  970K    1% /dev
+tmpfs            980K  1.2K  978K    1% /run
+/dev/sdb6        7.3M  284K  7.0M    4% /
+tmpfs            980K    97  979K    1% /dev/shm
+tmpfs            980K     5  980K    1% /run/lock
+tmpfs            980K    19  980K    1% /sys/fs/cgroup
+/dev/loop0        11K   11K     0  100% /snap/core18/2284
+/dev/loop1        12K   12K     0  100% /snap/core20/1376
+/dev/loop2        17K   17K     0  100% /snap/snap-store/558
+/dev/loop3        12K   12K     0  100% /snap/core20/1405
+/dev/loop4       5.9K  5.9K     0  100% /snap/pycharm-community/267
+/dev/loop5        18K   18K     0  100% /snap/gnome-3-38-2004/99
+/dev/loop7        484   484     0  100% /snap/snapd/15314
+/dev/loop6       5.9K  5.9K     0  100% /snap/pycharm-community/274
+/dev/loop8        28K   28K     0  100% /snap/gnome-3-28-1804/161
+/dev/loop9        482   482     0  100% /snap/snapd/15177
+/dev/loop10       64K   64K     0  100% /snap/gtk-common-themes/1519
+/dev/loop11        29    29     0  100% /snap/bare/5
+/dev/loop12       11K   11K     0  100% /snap/core18/2344
+/dev/loop13       133   133     0  100% /snap/drawio/146
+/dev/loop14       51K   51K     0  100% /snap/vlc/2344
+/dev/sdb5           0     0     0     - /boot/efi
+tmpfs            980K   107  979K    1% /run/user/1000
+/dev/loop15       133   133     0  100% /snap/drawio/148
+/dev/sda1        227M  4.9K  227M    1% /media/ganesh/New Volume

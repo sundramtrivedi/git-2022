@@ -1,0 +1,111 @@
+List Of Utility
+
+A=Authenticity A=Accessibility A=Accountability
+DMZ - (DO NOT KEEP THIS SERVICE OPEN ON ROUTER)
+COnferrence - IOTSHOW.in
+
+1. echo $HOME
+2. whoami
+3. hostname
+4. cat/etc/apt/source.list		<-------(to know where the apt-get packages come from)
+5. gcc test.c -o test.out && ./test.out	<------(Do multiple task in one line)
+6. rm fileName  	<-------(To remove any file)
+7. ifconfig or ip addr or ip -a		<-------(to get details of the system. Nevigation commands/// interfaces /// net tools utility)
+8. cd $HOME or cd /home/jeet or cd ~		<----------(change directory to home)
+9. pwd		<--------(To know the current directory we are in)
+10. cat /name_of_the_file         <-------(displayes the content of the file but overwrites the previous data)
+11. exit      <--------(to go back to normal user) 
+12. whereis "file_name"        <------ This will print all the paths related to the files_name
+13. v            <--------(verbose - that will show what is being done in the background)
+14. cd ..          <--------(will take a single file back)
+15. mkdir directoryName 		<------(To create a directory || mkdir -p 1/2/3)
+16. rmdir directoryName		<------(To delete a directory)
+17. rm -rf directoryName		<------(To forcefully delete a non empty directoryName)
+18. cd ../..				<-----(To go back a certain number of folder back)
+19. tree			<------(To display all the hierarchy of directory)
+20. touch			<------(it is used to create a blank file of type txt)
+21. >			<------(This is called as redirection. It writes the data to the file)
+22. >> 		<------(Append operator. It will write the data on the new line)
+23. ls -li		<-------(this will print the directory as a list)
+24. echo "hi" > ../directoryName/file.txt 		<-----(The .. sign is wildcard)
+25. ls -l	<----- lists files and directory
+26. ls -a 	<----- lists hidden files and directories
+27. ls -lh	<----- shows size in human readable format
+28. ls -r	<----- listing in reverse order
+29. ls -R	<----- Recursive list
+30. ls -lt	<----- sorting based on latest time
+31. cat -n <fileName>  	<-------(display file content with line)
+32. ctrl + d    <------(to stop taking input from the terminal)
+33. cat < fileName		<-----(this represents as stdin, so can use it as a file that can be written on the terminal or to another file)
+34. cat < fileName > fileNameNew	<------(This will print the fileName into fileNameNew because the fileName is stdin)
+35. head -n and tail -n commands		<-----(to print n numbers of data from the top or bottom) used for paging
+36. |		<-----(This is called as pipe. It is used when we create temp file and makes it as stdin. out of first become input of second)
+37. cat fileName | more			<--This will give you option we read the file line by line cleicking
+38. cat fileName | less			<-- This will give us the scroll up and down option
+39. sudo f-disk -l			<---- To know the entries or partition of the disk 
+40. df -h			<------ Very useful during dubugging
+41. lsb_release -a   		<------ ""
+42. drw-rw-r--			<--- Here, r means read, w means write, d means directory, x means execute rights, l means link file, s means socket file, p means pipe
+43. chmod ___  		<--- to change the writes of the files and dictionary 	0 - none, 1 - execute, 2 - Read, 4 - Write
+44. cp and mv cammonda		<------ Copy and move
+45. la 				<--- To display all the dot file/executable file
+46. uname 			<-------Read man uname (manual) 
+47. read -p			<------ To read user input using the prompt window
+48. wc 	-c character, -m new line, -l number of words, -w length of longest line, -L count the file 				<----- word count
+49. bc 				<-----binary calculator
+50. sudo apt-get install openssh-server				(ALL THE BELOW COMMANDS ARE GENERIC WE JUST HAVE TO PLACE THE SERVICE NAME INPLACE OF SSH)
+51. sudo systemctl enable ssh   or sudo service ssh start		<----(start, stop, restart, status these are the actions that can be done)
+52. sudo service ssh status or systemctl status
+53. passwd    	<----- to change the password
+54. scp <file> username@ip:<pathofthefile--wheretocopyonserver>			<----- secure copy (scp txt.test diot@192.168.77.37:/home/diot/)
+55. read -sp  		<---- to read keystoke in silent mode or hides what is entered
+56. sudo apt autoremove				<---- will remove a particular file
+57. firefox &				<--- Using the '&' sign we can run the process in the background to make a process foreground use the command "fg"
+58. expr			<----- Expression that will evaluate an expression
+59. if [[ -z $string ]] 		<----- This is how we can check if a string is empty or not
+60. cut -d [delimiter] -f [fieldnumber] [filename]		<----used to extract field wise data (example (cat /etc/passwd | cut -d ":" -f 1,6) and (ls -l | cut -d " " -f 1 | cut -d "-" -f 2))
+61. sudo cat /etc/passwd
+62. sudo cat /etc/shadow
+63. \ 			<------This is escape character that will continue the flow to the new line
+63. Always use -r when you are using read and use IFS= if you want to prevent to trim the
+64. tar czf ~/folderName.tar.gz ~/FolderToBackUp/
+65. cd /bin
+66. /bin/ls			<------- will do the same thing as the simple ls command
+67. /boot			<------ will show all the folders of the bootloader, we can use this to check/learn about the bootloader and check the .cfg files
+68. sudo dmesg -wH 			<----- This commands helps to indentify all the ports so that we can troubleshoot
+69. (***important***)etc/passwd is important file that conatins details of all the user that are present in the system
+70. (VERY IMPORTANT) Read man man
+71. man 2 fork  			<------ To know more about the forks, parent/child process
+72. ps -T -p process_id 		<----- This command will show how many threads are running for a single process
+73. pidof name			<----- This command will give process ID of the name provided
+74. ls -ltr			<------ sort the commands with date in descending order
+75. sudo netstat -naltp | grep vncserver				<------- to check the port number the vnc server is running on also important for Debugging - (n - numeric, al - altp - all listening port, altpu - option(all listening port of type UDP))
+76. man grep -A  			<----- Read this
+77. sudo netstat -naltp | grep ssh					<---- This will catch the ssh from the entire netstat
+78. DNS is /etc/host
+79. kernel image name vmlinuz
+80. DHCP assign dynamic ip address
+81. nmap -sT -p IP_ADDRESS				<----- scans the tcp ports
+82. nmap -sP IP_ADDRESS					<------ scans the entire ports
+83. lscpu					<----- to get the cpu info
+84. free 				<---- Command to check the total size of the ram
+85. mkfifo LOCATION				<------- This is create a pipe in a particular location (eg. cal > /tmp/jeet)
+86. node http-server			&& http-server						<------- This will create a local server
+87. echo "test_1 test_2 test_3" | xargs mkdir						<------- This is 
+88. echo "{$file%.htmk}.txt"					<----- This is rename the files 
+89. ps aux | grep _______						<----- To get the process id
+90. sudo kill -9 PID	OR   sudo pkill NAME			 			<----- To kill the process
+91. tar xvf ______________NAME_OF_FILE________.taz.xz
+	sudo nano ~/.bashrc
+	export PATH=/home/diot/ESP32/arduino-1.8.19:$PATH			<------ To set the path of the installation file
+92. randomnerdtutorials.com						<------ For connectivity of the ESP8266 and more
+93. To solve segmentation fault code 11:-
+	sudo apt purge binutils
+	sudo apt remove make
+	sudo apt autoremove
+	sudo apt install build-essential
+94. http-server 				<------ This will create a server
+95. ssh username@IP_address
+96. sudo lsof -i -P -n | grep LISTEN			<----- This will show all the ports that are listening
+
+

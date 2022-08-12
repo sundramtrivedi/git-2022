@@ -1,0 +1,1000 @@
+ 1065  ./a.out
+ 1066  gcc q1.c
+ 1067  ./a.out
+ 1068  gcc q2a.c
+ 1069  clear
+ 1070  gcc q2a.c
+ 1071  ./a.out
+ 1072  gcc q2a.c
+ 1073  ./a.out
+ 1074  clear
+ 1075  gcc q2a.c
+ 1076  ./a.out
+ 1077  clear
+ 1078  gcc q2a.c
+ 1079  ./a.out
+ 1080  gcc q3.c
+ 1081  clear
+ 1082  gcc q3.c
+ 1083  ./a.out
+ 1084  clear
+ 1085  man sqrt
+ 1086  gcc q3.c
+ 1087  ./a.out
+ 1088  clear
+ 1089  man sqrt
+ 1090  gcc q3.c
+ 1091  clear
+ 1092  gcc q3.c
+ 1093  clear
+ 1094  gcc q3.c
+ 1095  man pow
+ 1096  gcc q3.c
+ 1097  ./a.out
+ 1098  gcc q3.c
+ 1099  ./a.out
+ 1100  gcc q3.c
+ 1101  ./a.out
+ 1102  clear
+ 1103  gcc q3.c
+ 1104  ./a.out
+ 1105  clear
+ 1106  gcc q3.c
+ 1107  gcc q3.c -lm
+ 1108  ./a.out
+ 1109  gcc q3.c -lm
+ 1110  ./a.out
+ 1111  gcc q3.c -lm
+ 1112  ./a.out
+ 1113  gcc q4.c 
+ 1114  ./a.out
+ 1115  gcc q4.c 
+ 1116  ./a.out
+ 1117  clear
+ 1118  gcc q4.c 
+ 1119  ./a.out
+ 1120  gcc q4.c 
+ 1121  ./a.out
+ 1122  gcc q4.c 
+ 1123  ./a.out
+ 1124  clear
+ 1125  man atoi
+ 1126  gcc q4.c 
+ 1127  gcc q5.c 
+ 1128  ./a.out
+ 1129  gcc q5.c 
+ 1130  ./a.out
+ 1131  gcc q5.c 
+ 1132  ./a.out
+ 1133  gcc q5.c 
+ 1134  ./a.out
+ 1135  gcc q5.c 
+ 1136  ./a.out
+ 1137  gcc q5.c 
+ 1138  ./a.out
+ 1139  gcc q5.c 
+ 1140  ./a.out
+ 1141  gcc q5.c 
+ 1142  ./a.out
+ 1143  man atoi
+ 1144  gcc q2.c
+ 1145  ./a.out
+ 1146  gcc q2.c
+ 1147  ./a.out
+ 1148  gcc q2.c
+ 1149  ./a.out
+ 1150  gcc q2.c
+ 1151  ./a.out
+ 1152  gcc q2.c
+ 1153  ./a.out
+ 1154  gcc q2.c
+ 1155  ./a.out
+ 1156  clear
+ 1157  gcc q2.c
+ 1158  ./a.out
+ 1159  gcc q2.c
+ 1160  ./a.out
+ 1161  man toupper
+ 1162  gcc q2.c
+ 1163  clear
+ 1164  gcc q2.c
+ 1165  clear
+ 1166  gcc q2.c
+ 1167  clear
+ 1168  gcc q2.c
+ 1169  ./a.out
+ 1170  gcc q2.c
+ 1171  ./a.out
+ 1172  gcc q2.c
+ 1173  ./a.out
+ 1174  gcc q2.c
+ 1175  ./a.out
+ 1176  33
+ 1177  gcc q2.c
+ 1178  ./a.out
+ 1179  gcc q2.c
+ 1180  ./a.out
+ 1181  gcc p5.c
+ 1182  ./a.out
+ 1183  gcc q2.c
+ 1184  ./a.out
+ 1185  gcc q2.c
+ 1186  ./a.out
+ 1187  clear
+ 1188  gcc q2.c
+ 1189  ./a.out
+ 1190  clear
+ 1191  gcc q2.c
+ 1192  ./a.out
+ 1193  clear
+ 1194  gcc q2.c
+ 1195  ./a.out
+ 1196  gcc q2.c
+ 1197  ./a.out
+ 1198  gcc q2.c
+ 1199  ./a.out
+ 1200  gcc q2.c
+ 1201  ./a.out
+ 1202  gcc p1.c
+ 1203  ./a.out
+ 1204  gcc p2.c
+ 1205  clear
+ 1206  gcc p2.c
+ 1207  gcc q2.c
+ 1208  /.a.out
+ 1209  clear
+ 1210  gcc q2.c
+ 1211  /.a.out
+ 1212  ./a.out
+ 1213  clear
+ 1214  gcc q2.c
+ 1215  ./a.out
+ 1216  gcc q2.c
+ 1217  ./a.out
+ 1218  clear
+ 1219  gcc q2.c
+ 1220  ./a.out
+ 1221  gcc q2.c
+ 1222  ./a.out
+ 1223  gcc q2.c
+ 1224  ./a.out
+ 1225  clear
+ 1226  gcc q1a.c
+ 1227  clear
+ 1228  gcc q1a.c
+ 1229  man offsetof
+ 1230  gcc q3a.c
+ 1231  clear
+ 1232  gcc q3a.c
+ 1233  clear
+ 1234  gcc q3a.c
+ 1235  ./a.out
+ 1236  gcc q3a.c
+ 1237  ./a.out
+ 1238  gcc q3a.c
+ 1239  ./a.out
+ 1240  gcc q3a.c
+ 1241  ./a.out
+ 1242  gcc q3a.c
+ 1243  ./a.out
+ 1244  gcc q3a.c
+ 1245  ./a.out
+ 1246  gcc q3a.c
+ 1247  ./a.out
+ 1248  clear
+ 1249  gcc q3a.c
+ 1250  ./a.out
+ 1251  gcc q3a.c
+ 1252  ./a.out
+ 1253  gcc q3a.c
+ 1254  ./a.out
+ 1255  gcc q3a.c
+ 1256  ./a.out
+ 1257  clear
+ 1258  ls
+ 1259  clear
+ 1260  gcc -E p1.c | less
+ 1261  gcc -E p1.c
+ 1262  q
+ 1263  gcc -S p1.c
+ 1264  gcc -s p1.c
+ 1265  clear
+ 1266  gcc p1.c
+ 1267  gcc q2.c
+ 1268  ls
+ 1269  gcc q5.c
+ 1270  ./a.out
+ 1271  gcc -S q5.c
+ 1272  q5.o
+ 1273  gcc p1.c
+ 1274  clear
+ 1275  man gcc
+ 1276  ld q3.c
+ 1277  ld q3a.c
+ 1278  ld q3a.o
+ 1279  ld p3a.o
+ 1280  gcc p3a.c
+ 1281  gcc p3a.o
+ 1282  gcc p3a.c -o p3q.o
+ 1283  gcc p3a.o
+ 1284  ./p3a.out
+ 1285  p3a.out
+ 1286  man STDC
+ 1287  man __STDC__
+ 1288  gcc test.c
+ 1289  ./a.out
+ 1290  gcc q3a.c
+ 1291  gcc q1a.c
+ 1292  ./a.out
+ 1293  gcc q1a.c
+ 1294  ./a.out
+ 1295  gcc q1.c
+ 1296  ./a.out
+ 1297  clear
+ 1298  gcc q1.c
+ 1299  clear
+ 1300  gcc q1.c
+ 1301  ./a.out
+ 1302  clear
+ 1303  gcc q1.c
+ 1304  clear
+ 1305  gcc q1.c
+ 1306  ./a.out
+ 1307  man strmp
+ 1308  clear
+ 1309  gcc q1.c
+ 1310  clear
+ 1311  gcc q1.c
+ 1312  ./a.out
+ 1313  clear
+ 1314  gcc q1.c
+ 1315  ./a.out
+ 1316  clear
+ 1317  gcc q1.c
+ 1318  ./a.out
+ 1319  clear
+ 1320  gcc q1.c
+ 1321  ./a.out
+ 1322  gcc q5.c
+ 1323  ./a.out
+ 1324  man atoi
+ 1325  gcc q5.c
+ 1326  ./a.out
+ 1327  gcc q5.c
+ 1328  ./a.out
+ 1329  man atoi
+ 1330  gcc q5.c
+ 1331  ./a.out
+ 1332  gcc q5.c
+ 1333  ./a.out
+ 1334  gcc q5.c
+ 1335  ./a.out
+ 1336  gcc q5.c
+ 1337  ./a.out
+ 1338  gcc q5.c
+ 1339  ./a.out
+ 1340  gcc q5.c
+ 1341  ./a.out
+ 1342  gcc q5.c
+ 1343  ./a.out
+ 1344  gcc q5.c
+ 1345  ./a.out
+ 1346  gcc q5.c
+ 1347  ./a.out
+ 1348  gcc q5.c
+ 1349  ./a.out
+ 1350  gcc q5.c
+ 1351  ./a.out
+ 1352  gcc q5.c
+ 1353  ./a.out
+ 1354  gcc q5.c
+ 1355  ./a.out
+ 1356  gcc q5.c
+ 1357  ./a.out
+ 1358  clear
+ 1359  man strtoimax
+ 1360  gcc q5.c
+ 1361  ./a.out
+ 1362  gcc q5.c
+ 1363  ./a.out
+ 1364  gcc q5.c
+ 1365  ./a.out
+ 1366  man strcmp
+ 1367  clear
+ 1368  gcc q5.c
+ 1369  gcc p1.c
+ 1370  ./a.out
+ 1371  gcc p1.c
+ 1372  ./a.out
+ 1373  gcc p1.c
+ 1374  ./a.out
+ 1375  gcc p2.c
+ 1376  ./a.out
+ 1377  gcc p2.c
+ 1378  ./a.out
+ 1379  gcc p2.c
+ 1380  clear
+ 1381  gcc p2.c
+ 1382  ./a.out
+ 1383  gcc p2.c
+ 1384  ./a.out
+ 1385  gcc p2.c
+ 1386  ./a.out
+ 1387  gcc p2.c
+ 1388  ./a.out
+ 1389  man exit
+ 1390  gcc p5.c
+ 1391  ./a.out
+ 1392  ./a.out 10 20 30
+ 1393  ./a.out 10 
+ 1394  clear
+ 1395  gcc p5.c
+ 1396  ./a.out  10 20
+ 1397  gcc p5.c
+ 1398  ./a.out  10 20
+ 1399  gcc p5.c
+ 1400  ./a.out  10 20 30 40 
+ 1401  clear
+ 1402  gcc p5.c
+ 1403  ./a.out  10 20 30 40 
+ 1404  gcc p6.c
+ 1405  ./a.out
+ 1406  gcc p6.c
+ 1407  ./a.out
+ 1408  gcc p6.c
+ 1409  ./a.out
+ 1410  gcc p6.c
+ 1411  ./a.out
+ 1412  clear
+ 1413  gcc p7.c
+ 1414  ./a.out
+ 1415  gcc p7.c
+ 1416  ./a.out
+ 1417  gcc q1.c
+ 1418  ./a.out
+ 1419  clear
+ 1420  gcc q1.c
+ 1421  ./a.out
+ 1422  clear
+ 1423  gcc q1.c
+ 1424  ./a.out
+ 1425  gcc q1.c
+ 1426  ./a.out
+ 1427  gcc q1.c
+ 1428  ./a.out
+ 1429  gcc q1.c
+ 1430  ./a.out
+ 1431  gcc q1.c
+ 1432  ./a.out
+ 1433  gcc q1.c
+ 1434  ./a.out
+ 1435  gcc q1.c
+ 1436  ./a.out
+ 1437  gcc q1.c
+ 1438  ./a.out
+ 1439  gcc q1.c
+ 1440  ./a.out
+ 1441  gcc q1.c
+ 1442  ./a.out
+ 1443  gcc q1.c
+ 1444  ./a.out
+ 1445  gcc q1.c
+ 1446  ./a.out
+ 1447  gcc q1.c
+ 1448  ./a.out
+ 1449  gcc q1.c
+ 1450  ./a.out
+ 1451  gcc q1.c
+ 1452  ./a.out
+ 1453  gcc q1.c
+ 1454  ./a.out
+ 1455  gcc q1.c
+ 1456  ./a.out
+ 1457  gcc q1.c
+ 1458  ./a.out
+ 1459  gcc q1.c
+ 1460  ./a.out
+ 1461  gcc q1.c
+ 1462  ./a.out
+ 1463  gcc q2.c
+ 1464  ./a.out
+ 1465  clear
+ 1466  gcc q2.c
+ 1467  ./a.out
+ 1468  gcc q2.c
+ 1469  ./a.out
+ 1470  clear
+ 1471  gcc q3.c
+ 1472  ./a.out
+ 1473  gcc q3.c
+ 1474  clear
+ 1475  gcc q3.c
+ 1476  ./a.out
+ 1477  gcc q3.c
+ 1478  ./a.out
+ 1479  gcc q3.c
+ 1480  ./a.out
+ 1481  gcc q3.c
+ 1482  ./a.out
+ 1483  gcc q3.c
+ 1484  ./a.out
+ 1485  gcc q3.c
+ 1486  ./a.out
+ 1487  gcc q3.c
+ 1488  clear
+ 1489  gcc q3.c
+ 1490  ./a.out
+ 1491  gcc q3.c
+ 1492  ./a.out
+ 1493  gcc q3.c
+ 1494  ./a.out
+ 1495  gcc q3.c
+ 1496  ./a.out
+ 1497  gcc q3.c
+ 1498  ./a.out
+ 1499  gcc q3.c
+ 1500  ./a.out
+ 1501  gcc q3.c
+ 1502  ./a.out
+ 1503  gcc q3.c
+ 1504  ./a.out
+ 1505  gcc q3.c
+ 1506  ./a.out
+ 1507  gcc q3.c
+ 1508  ./a.out\
+ 1509  clear
+ 1510  gcc q3.c
+ 1511  ./a.out
+ 1512  gcc q3.c
+ 1513  ./a.out
+ 1514  gcc q3.c
+ 1515  ./a.out
+ 1516  gcc q3.c
+ 1517  ./a.out
+ 1518  gcc q3.c
+ 1519  ./a.out
+ 1520  gcc q3.c
+ 1521  ./a.out
+ 1522  gcc q3.c
+ 1523  ./a.out
+ 1524  gcc q3.c
+ 1525  ./a.out
+ 1526  gcc q3.c
+ 1527  ./a.out
+ 1528  gcc q3.c
+ 1529  ./a.out
+ 1530  gcc q3.c
+ 1531  ./a.out
+ 1532  gcc q3.c
+ 1533  ./a.out
+ 1534  gcc q3.c
+ 1535  ./a.out
+ 1536  gcc q3.c
+ 1537  ./a.out
+ 1538  gcc q3.c
+ 1539  ./a.out
+ 1540  gcc p1.c
+ 1541  ./a.out
+ 1542  clear
+ 1543  gcc p1.c
+ 1544  ./a.out
+ 1545  gcc p1.c
+ 1546  ./a.out
+ 1547  clear
+ 1548  gcc p1.c
+ 1549  ./a.out
+ 1550  gcc p1.c
+ 1551  gcc p.c
+ 1552  ./a.out
+ 1553  clear
+ 1554  ./a.out
+ 1555  gcc p.c
+ 1556  clear
+ 1557  gcc p.c
+ 1558  echo $SHELL
+ 1559  c=erterterter
+ 1560  echo $c
+ 1561  c="erterterter"
+ 1562  echo $c
+ 1563  echo $HOME
+ 1564  echo $SUNDRAM
+ 1565  who am i
+ 1566  whoami
+ 1567  whoiam
+ 1568  iamwho
+ 1569  hostname
+ 1570  echo $HOSTNAME
+ 1571  home
+ 1572  uhome
+ 1573  xurnal
+ 1574  sudo apt install xournal
+ 1575  xournal
+ 1576  clear
+ 1577  sudo apt update
+ 1578  sudo apt upgrade
+ 1579  sudu apt purge xurnal
+ 1580  sudu apt purge xournal
+ 1581  sudo apt purge xournal
+ 1582  sudo apt update -y && sudo apt install net-tools -y
+ 1583  clear
+ 1584  gcc test.c -o test.out && ./test.out
+ 1585  sudoapt
+ 1586  sudo apt -net tools-y
+ 1587  ifconfig
+ 1588  ping 127.0.0.1
+ 1589  ip addr
+ 1590  ip -a
+ 1591  ip - address
+ 1592  ip -address
+ 1593  ip addr
+ 1594  ip address
+ 1595  ifconfig
+ 1596  clear
+ 1597  ifconfig
+ 1598  wlps5s0
+ 1599  clear
+ 1600  ifconfig -a
+ 1601  ifconfig
+ 1602  pwd
+ 1603  cd $HOME
+ 1604  PWD
+ 1605  pwd
+ 1606  cd ~
+ 1607  pwd
+ 1608  clear
+ 1609  sudo install chrome
+ 1610  gcc q3.c
+ 1611  ./a.out
+ 1612  gcc q3.c
+ 1613  ./a.out
+ 1614  cat /etc/apt/source.list
+ 1615  cat /etc/apt/Source.list
+ 1616  cat /etc/apt/sources.list
+ 1617  sudo su
+ 1618  exit
+ 1619  whereis python
+ 1620  whereis c
+ 1621  whereis cd
+ 1622  whereis pwd
+ 1623  pwd
+ 1624  mkdir -v Day1
+ 1625  ls
+ 1626  cd PGDIOT && Day2 -y
+ 1627  cd PGDIOT && mkdir Day2 
+ 1628  cd Day && mkdir Day2 
+ 1629  cd Day1 && mkdir Day2 
+ 1630  cd Day1 && mkdir Day2 -y
+ 1631  cd Day1 && mkdir Day2
+ 1632  mk -v linux
+ 1633  mkdir -v linux
+ 1634  cd linux && mkdir practice
+ 1635  cd..
+ 1636  cd....
+ 1637  cd ..
+ 1638  cd PGDIOT
+ 1639  cd PGDIOT && Day1
+ 1640  cd PGDIOT && mkdir  Day1
+ 1641  cd ..
+ 1642  cd PGDIOT && mkdir Day1
+ 1643  cd PGDIOT && mkdir linux
+ 1644  cd ..
+ 1645  cd PGDIOT && mkdir linux
+ 1646  cd ..
+ 1647  mkdir Day1
+ 1648  mkdir -v  Day1
+ 1649  cd ..
+ 1650  cd &HOME
+ 1651  cd $HOME
+ 1652  cd mkdir -v Day1
+ 1653  mkdir -v Day1
+ 1654  cd Day1 && mkdir -v practice
+ 1655  ls
+ 1656  cd practice/
+ 1657  cd ..
+ 1658  rm  practice
+ 1659  cd ..
+ 1660  rm  practice
+ 1661  rd practice
+ 1662  purge practice
+ 1663  cd ..
+ 1664  rm practice
+ 1665  ls
+ 1666  cd diot/
+ 1667  ls
+ 1668  clear
+ 1669  cd $HOME
+ 1670  LS
+ 1671  ls
+ 1672  ls HOME
+ 1673  ls $HOME
+ 1674  ls PGDIOT/
+ 1675  cd linux
+ 1676  ls linux
+ 1677  ls $HOME
+ 1678  lg PGDIOT/
+ 1679  ls PGDIOT/mkdir -v Day22/practice
+ 1680  ls PGDIOT/
+ 1681  ls linunx
+ 1682  ls linux
+ 1683  cd Day1/
+ 1684  rm practice
+ 1685  rmdir practice
+ 1686  rmdir Day1
+ 1687  cd ..
+ 1688  cs $HOME/
+ 1689  cs $HOME
+ 1690  cd ~/Day1
+ 1691  cd HOME
+ 1692  cd Day1 && mkdir practice
+ 1693  ls
+ 1694  cd ..
+ 1695  cd Day1 && mkdir l1
+ 1696  cd Day1 && mkdir -v l1
+ 1697  cd Day1/
+ 1698  cd ..
+ 1699  cd Day1/
+ 1700  cd ~/Day1
+ 1701  mkdir linux
+ 1702  cd Day1 && mkdir l1
+ 1703  mkdir -v l1
+ 1704  rmdir -v l1
+ 1705  cd Day1 && mkdir -v l1
+ 1706  cd Day && mkdir l1
+ 1707  ls
+ 1708  cd ..
+ 1709  ls
+ 1710  cd diot/
+ 1711  ls
+ 1712  cd Day1 && mkdir l1
+ 1713  cd Day && rmdir l1
+ 1714  cd ..
+ 1715  cd Day1 && rmdir l1
+ 1716  cd ..
+ 1717  cd Day1 && mkdir l1 && rmdir l1
+ 1718  ls
+ 1719  tree
+ 1720  cd ..
+ 1721  tree
+ 1722  sudo apt install tree
+ 1723  clear
+ 1724  cd 1/2
+ 1725  cd Day1/linux && mkdir l1
+ 1726  mkdir -p Day1/linux
+ 1727  mkdir -p Day1/linux/l1
+ 1728  mkdir -p Day1/linux/l1/l2
+ 1729  cd ..
+ 1730  touch.txt
+ 1731  touch 2.txt
+ 1732  ls
+ 1733  cd PGDIOT/
+ 1734  cd ~/linux
+ 1735  touch test.txt
+ 1736  ls
+ 1737  echo "hi sundram" > test.txt 
+ 1738  cat test.txt 
+ 1739  cd PGDIOT/
+ 1740  mkdir Python
+ 1741  mkdir Day1
+ 1742  cd
+ 1743  cd PGDIOT/Python/Day1
+ 1744  cd PGDIOT/Python/
+ 1745  cd 
+ 1746  cd PGDIOT/Python/mkdir Day1
+ 1747  cd PGDIOT/Python/
+ 1748  mkdir Day1
+ 1749  ls
+ 1750  cd Day1/
+ 1751  python3
+ 1752  clear
+ 1753  python2 --version
+ 1754  python3 --version
+ 1755  python --version
+ 1756  python3
+ 1757  clear
+ 1758  python3
+ 1759  touch p1.txt
+ 1760  touch p1.py
+ 1761  rm p1.txt
+ 1762  python3 p1.py
+ 1763  cd PGDIOT/Python/Day1/
+ 1764  touch p2.py
+ 1765  python3 p2.py
+ 1766  touch p3.py
+ 1767  python3 p3.py
+ 1768  touch p4.py
+ 1769  cd PGDIOT/Python/Day1/
+ 1770  touch p4.py
+ 1771  python3 p3.py
+ 1772  python3 p4.py
+ 1773  touch p5.py
+ 1774  python3 p5.py
+ 1775  touch p6.py
+ 1776  python3 p6.py
+ 1777  touch p7.py
+ 1778  touch q1.py
+ 1779  python3 q1.py
+ 1780  touch q2.py
+ 1781  python3 q2.py
+ 1782  clear
+ 1783  python3 q2.py
+ 1784  touch q3.py
+ 1785  python3 q3.py
+ 1786  touch q4.py
+ 1787  python3 q4.py
+ 1788  touch q5.py
+ 1789  touch p7.py
+ 1790  man fscanf
+ 1791  cd PGDIOT/linux/
+ 1792  tree
+ 1793  cd ..
+ 1794  tree
+ 1795  sudo snap install tree
+ 1796  tree
+ 1797  echo "Trivedie's"
+ 1798  echo "Trivedie's" > data.txt
+ 1799  cat data.txt
+ 1800  cd linux/
+ 1801  echo "Trivedie's" > data.txt
+ 1802  echo "Satyam Shivam Sundram Trivedie's" > data.txt
+ 1803  cat data.txt
+ 1804  echo "Satyam Shivam Sundram Trivedie's" >> data.txt
+ 1805  cat data.txt
+ 1806  echo "Satyam Shivam Sundram " >> data.txt
+ 1807  cat data.txt
+ 1808  echo "Trivedie's" >> data.txt
+ 1809  cat data.txt
+ 1810  echo "Satyam Shivam Sundram " >> data.txt
+ 1811  cat data.txt
+ 1812  echo "Trivedie's" >> data.txt
+ 1813  cat data.txt
+ 1814  tree
+ 1815  ls
+ 1816  rm -rf linux/
+ 1817  ls
+ 1818  cd ..
+ 1819  rm -rf linux/
+ 1820  ls
+ 1821  mkdir linux
+ 1822  ls
+ 1823  cd linux/
+ 1824  cd ~
+ 1825  cd PGDIOT/linux/
+ 1826  echo "hi" > ../linux/test.txt
+ 1827  ls
+ 1828  echo "hi" > ../linux/data.txt
+ 1829  echo "hi" > ../linux/test.txt
+ 1830  pwd
+ 1831  cd ..
+ 1832  echo "hi" > ../linux/test1.txt
+ 1833  mk -p 1/2//3
+ 1834  mkdir 1/12/3
+ 1835  mkdir 1/2/3
+ 1836  tree
+ 1837  clear
+ 1838  cd linux/
+ 1839  mkdir 1/2/3
+ 1840  mkdir -p 1/2/3
+ 1841  ls
+ 1842  pwd
+ 1843  cat mkdir
+ 1844  tree
+ 1845  cd 1/2/3/
+ 1846  echo "IOT is awesome" > ../1/file.txt
+ 1847  echo "IOT is awesome" > ..linux/1/file.txt
+ 1848  echo "IOT is awesome" > ..linux/file.txt
+ 1849  echo "IOT is awesome" > ..1/file.txt
+ 1850  echo "IOT is awesome" > ../../1/file.txt
+ 1851  ls
+ 1852  pwd
+ 1853  echo "IOT is awesome" >> ../../1/file.txt
+ 1854  echo "IOT is awesome" >../../1/file.txt
+ 1855  echo "IOT is awesome" > ../1/file.txt
+ 1856  echo "IOT is awesome" > ../1/touch file.txt
+ 1857  echo "IOT is awesome" > ../../touchfile.txt
+ 1858  ls
+ 1859  tree
+ 1860  echo "IOT is awesome" > ../../file.txt
+ 1861  cd ..
+ 1862  echo "IOT is awesome" > ../3/file.txt
+ 1863  echo "IOT is awesome" > 3/file.txt
+ 1864  cat 3
+ 1865  cat 3/
+ 1866  ls
+ 1867  tree
+ 1868  cd ..
+ 1869  tree
+ 1870  cd 1/2/3
+ 1871  mkdir 5 > ../../
+ 1872  mkdir ../../1dir
+ 1873  tree
+ 1874  tree ../../..
+ 1875  ls -a
+ 1876  ls -l
+ 1877  ls
+ 1878  ls -a
+ 1879  ls ltr
+ 1880  ls -ltr
+ 1881  ls -R
+ 1882  ls - la
+ 1883  ls -alh
+ 1884  ls -lh
+ 1885  ls -r
+ 1886  clear
+ 1887  cd ..
+ 1888  cd Python/
+ 1889  mkdir Day2
+ 1890  cd Python/Day2
+ 1891  cd /Day2
+ 1892  cd Day2/
+ 1893  touch p1.py
+ 1894  python3 p1.py
+ 1895  python3 try.py
+ 1896  python3 try_print.py
+ 1897  clear
+ 1898  python3 try_print.py
+ 1899  cd ..
+ 1900  cd Day
+ 1901  cd Day/
+ 1902  cd Day1/
+ 1903  python3 try_print.py
+ 1904  cd ..
+ 1905  cd Day2/
+ 1906  python3 p2.py
+ 1907  python3 p2.py\
+ 1908  python3 p2.py
+ 1909  python3 q1.py
+ 1910  cd PGDIOT/Python/Day2/
+ 1911  python3 q1.py
+ 1912  python3 qa1.py
+ 1913  python3 q1a.py
+ 1914  python3 q1.py
+ 1915  cd PGDIOT/Python/Day2/
+ 1916  python3 q1.py
+ 1917  python3 q4.py
+ 1918  python3 q5.py
+ 1919  python3 q3.py
+ 1920  python3 q5.py
+ 1921  python3 q3.py
+ 1922  can not modify
+ 1923  python3 q3.py
+ 1924  clear
+ 1925  python3 q3.py
+ 1926  clear
+ 1927  python3 q4.py
+ 1928  clear
+ 1929  python3 p4.py
+ 1930  python3 p3.py
+ 1931  python3 p5.py
+ 1932  python3 p4.py
+ 1933  python3 p5.py
+ 1934  python3 p4.py
+ 1935  cd PGDIOT/Python/Day2/
+ 1936  python3 q1.py
+ 1937  cd Assignment2/
+ 1938  python3 q1.py
+ 1939  python3 q2.py
+ 1940  clear
+ 1941  python3 q2.py
+ 1942  clear
+ 1943  python3 q2.py
+ 1944  clear
+ 1945  python3 q2.py
+ 1946  clear
+ 1947  python3 q1.py
+ 1948  clear
+ 1949  python3 q1.py
+ 1950  clear
+ 1951  python3 q3.py
+ 1952  clear
+ 1953  python3 q3.py
+ 1954  python3 q4.py
+ 1955  clear
+ 1956  python3 q4.py
+ 1957  xrandr
+ 1958  cd ..
+ 1959  gcc q1.c
+ 1960  cd PGDIOT/C_programming/Day17/
+ 1961  gcc q1.c
+ 1962  clear
+ 1963  gcc q1.c
+ 1964  clear
+ 1965  gcc q1.c
+ 1966  ./a.out
+ 1967  gcc q2main.c
+ 1968  /.a.out
+ 1969  ./a.out
+ 1970  gcc q5.c
+ 1971  clear
+ 1972  gcc q5.c
+ 1973  ./a.out
+ 1974  gcc q5.c
+ 1975  ./a.out
+ 1976  gcc q5.c
+ 1977  ./a.out
+ 1978  gcc q5.c
+ 1979  ./a.out
+ 1980  clear
+ 1981  gcc q5.c
+ 1982  ./a.out
+ 1983  clear
+ 1984  gcc q5.c
+ 1985  ./a.out
+ 1986  clear
+ 1987  man fgets
+ 1988  gcc q5.c
+ 1989  ./a.out
+ 1990  clear
+ 1991  gcc q5.c
+ 1992  ./a.out
+ 1993  gcc q5.c
+ 1994  ./a.out
+ 1995  gcc q5.c
+ 1996  ./a.out
+ 1997  man fgets
+ 1998  ./a.out
+ 1999  gcc q5.c
+ 2000  ./a.out
+ 2001  cd PGDIOT/linux/
+ 2002  cat data.txt test.txt
+ 2003  echo "3,4" ../../test1.txt
+ 2004  cat test1.txt
+ 2005  echo "1,2" ../data.txt
+ 2006  cat data.txt
+ 2007  echo "1" > data.txt
+ 2008  echo "2" >> data.txt
+ 2009  cat data.txt
+ 2010  echo "3" > test.txt
+ 2011  echo "4" > test.txt
+ 2012  echo "4" > ../test1.txt
+ 2013  cat test.txt
+ 2014  echo "5" > ../test1.txt
+ 2015  cat data.txt test.txt test1.txt
+ 2016  cat test1.txt
+ 2017  echo "5" >> ../../test1.txt
+ 2018  cat test1.txt
+ 2019  cat data.txt
+ 2020  cat test.txt
+ 2021  echo "3" >> test.txt 
+ 2022  cat test.txt
+ 2023  cat test1.txt
+ 2024  echo "5" > test1.txt
+ 2025  cat test1.txt
+ 2026  echo "6" >> test1.txt
+ 2027  cat data.txt test.txt test1.txt
+ 2028  echo "3" > test2.txt
+ 2029  echo "4" >> test2.txt
+ 2030  cat data.txt test.txt test2.txt
+ 2031  cat data.txt test2.txt test.txt
+ 2032  cat data.txt test2.txt test1.txt
+ 2033  tty
+ 2034  cat -n data.txt
+ 2035  cat -n test2.txt
+ 2036  cat -n  data.txt > test2.txt
+ 2037  cat data.txt
+ 2038  cat test2.txt
+ 2039  cat -n data.txt > test2.txt
+ 2040  cat data.txt
+ 2041  cat test2.txt
+ 2042  cat data.txt
+ 2043  cat -n test2.txt
+ 2044  cat test1.txt
+ 2045  cat test1.txt >> data.txt
+ 2046  cat data.txt
+ 2047  echo "helllo" > test2.txt
+ 2048  cat test2.txt
+ 2049  cat >> test2.txt
+ 2050  cat test2.txt
+ 2051  cat >> test2.txt
+ 2052  cat test2.txt
+ 2053  cat >> test2.txt
+ 2054  cat test2.txt
+ 2055  cat >> test2.txt
+ 2056  cat test2.txt
+ 2057  cat >> test2.txt
+ 2058  cat test2.txt
+ 2059  cat >> test2.txt
+ 2060  cat test2.txt
+ 2061  cat < test2.txt
+ 2062  cat
+ 2063  history
+ 2064  history > test3.txt

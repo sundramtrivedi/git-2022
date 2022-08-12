@@ -1,0 +1,4 @@
+total 24
+-rw-rw-r-- 1 ganesh ganesh     0 Apr  9 18:20 test1.txt
+-rw-rw-r-- 1 ganesh ganesh 18284 Apr  4 21:49 Test Mcqs.odt
+-rw-rw-r-- 1 ganesh ganesh  3595 Apr  9 18:00 test.txt

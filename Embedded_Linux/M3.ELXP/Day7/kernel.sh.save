@@ -1,0 +1,8 @@
+#!/bin/bash
+system_hostname=`uname -n`
+system_kernel_version=$`uname -v`
+system_kernel_name=$`uname -s`
+echo "Your hostname :-"$system_hostname
+echo "Your Kernel version :-"$system_kernel_version
+echo "Your Kernel name :-"$system_kernel_name
+

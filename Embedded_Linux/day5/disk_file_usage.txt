@@ -1,0 +1,21 @@
+Filesystem     Inodes IUsed IFree IUse% Mounted on
+udev             2.0M   657  2.0M    1% /dev
+tmpfs            2.0M  1.2K  2.0M    1% /run
+/dev/nvme0n1p9   1.7M  210K  1.5M   13% /
+tmpfs            2.0M    63  2.0M    1% /dev/shm
+tmpfs            2.0M     5  2.0M    1% /run/lock
+tmpfs            2.0M    19  2.0M    1% /sys/fs/cgroup
+/dev/loop0         29    29     0  100% /snap/bare/5
+/dev/loop1        13K   13K     0  100% /snap/core/12834
+/dev/loop3        17K   17K     0  100% /snap/snap-store/558
+/dev/loop2       3.9K  3.9K     0  100% /snap/code/92
+/dev/loop4        64K   64K     0  100% /snap/gtk-common-themes/1519
+/dev/loop5        18K   18K     0  100% /snap/gnome-3-38-2004/99
+/dev/loop6        482   482     0  100% /snap/snapd/15177
+/dev/loop7        13K   13K     0  100% /snap/core/12941
+/dev/loop8        12K   12K     0  100% /snap/core20/1405
+/dev/loop9        12K   12K     0  100% /snap/core20/1328
+/dev/loop10       484   484     0  100% /snap/snapd/15314
+/dev/nvme0n1p1      0     0     0     - /boot/efi
+tmpfs            2.0M    98  2.0M    1% /run/user/1000
+/dev/loop11      3.9K  3.9K     0  100% /snap/code/93

@@ -1,0 +1,6 @@
+total 568K
+-rw-rw-r-- 1 ganesh ganesh 1.4K Apr  5 23:38 cli_day3.txt
+-rw-rw-r-- 1 ganesh ganesh 553K Apr  5 22:29 Day-01-Embedded-Linux.pdf
+-rw-rw-r-- 1 ganesh ganesh    0 Apr  6 06:48 output.txt
+drwxrwxr-x 3 ganesh ganesh 4.0K Apr  5 08:35 test
+-rw-rw-r-- 1 ganesh ganesh   51 Apr  5 08:03 test.txt

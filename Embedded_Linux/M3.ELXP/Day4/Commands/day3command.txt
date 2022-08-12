@@ -1,0 +1,500 @@
+   62  cd ..
+   63  ls
+   64  cat touch1.txt
+   65  cd 2/3/
+   66  tree
+   67  cd ../..
+   68  tree
+   69  cd 2/3/
+   70  tree ../../..
+   71  mkdir ../../1dir
+   72  tree ../../..
+   73  cd ../../..
+   74  ls
+   75  ls -l
+   76  ls -a
+   77  ls -lh
+   78  ls -r
+   79  ls -R
+   80  ls -lt
+   81  ls -ltr
+   82  cd
+   83  ls -la
+   84  ls -lh
+   85  ls -r
+   86  ls -ltr
+   87  clear
+   88  cd PG-DIoT/
+   89  cd M2.\ Programming\ Technologies/
+   90  cd Python/
+   91  mkdir -v Day2
+   92  cd Day2
+   93  ls
+   94  python3 while_loop.py 
+   95  python3 while_loop.py 
+   96  python3 while_loop.py 
+   97  python3 while_loop.py 
+   98  python3 while_loop.py 
+   99  python3 while_loop.py 
+  100  python3 while_loop.py 
+  101  python3 while_loop.py 
+  102  clear
+  103  python3 string.py 
+  104  python3 string.py 
+  105  python3 string.py 
+  106  clear
+  107  python3 string.py 
+  108  clear
+  109  python3 string.py 
+  110  python3 string.py 
+  111  python3 string.py 
+  112  python3 string.py 
+  113  clear
+  114  python3 string.py 
+  115  python3 string.py 
+  116  python3 string.py 
+  117  python3 string.py 
+  118  python3 string.py 
+  119  clear
+  120  python3 string.py 
+  121  python3 string.py 
+  122  clear
+  123  python3 string.py 
+  124  python3 string.py 
+  125  python3 string.py 
+  126  clear
+  127  python3 string.py 
+  128  python3 string.py 
+  129  clear
+  130  python3 string.py 
+  131  clear
+  132  python3 string.py 
+  133  python3 string.py 
+  134  clear
+  135  python3 string.py 
+  136  clear
+  137  python3 string.py 
+  138  clear
+  139  python3 string.py 
+  140  python3 palpindron.py 
+  141  python3 palpindron.py 
+  142  clear
+  143  python3 palpindron.py 
+  144  clear
+  145  python3 palpindron.py 
+  146  python3 palpindron.py 
+  147  python3 palpindron.py 
+  148  python3 palpindron.py 
+  149  clear
+  150  python3 conv_substr_char.py 
+  151  clear
+  152  python3 conv_substr_char.py 
+  153  python3 conv_substr_char.py 
+  154  clear
+  155  python3 conv_substr_char.py 
+  156  python3 conv_substr_char.py 
+  157  python3 conv_substr_char.py 
+  158  python3 conv_substr_char.py 
+  159  python3 conv_substr_char.py 
+  160  clear
+  161  python3 conv_substr_char.py 
+  162  python3 conv_substr_char.py 
+  163  clear
+  164  python3 conv_substr_char.py 
+  165  python3 conv_substr_char.py 
+  166  clear
+  167  python3 conv_substr_char.py 
+  168  clear
+  169  python3 conv_substr_char.py 
+  170  clear
+  171  python3 conv_substr_char.py 
+  172  clear
+  173  man isdigit
+  174  python3 check_int.py 
+  175  python3 check_int.py 
+  176  python3 check_int.py 
+  177  python3 check_int.py 
+  178  python3 check_int.py 
+  179  clear
+  180  python3 check_int.py 
+  181  python3 check_int.py 
+  182  python3 check_int.py 
+  183  python3 check_int.py 
+  184  python3 check_alpha.py
+  185  python3 check_alpha.py
+  186  python3 check_int.py 
+  187  clear
+  188  clear
+  189  python3 conv_substr_char.py 
+  190  python3 conv_substr_char.py 
+  191  python3 conv_substr_char.py 
+  192  python3 conv_substr_char.py 
+  193  python3 conv_substr_char.py 
+  194  python3 conv_substr_char.py 
+  195  python3 conv_substr_char.py 
+  196  clear
+  197  python3 palpindron.py 
+  198  python3 palpindron.py 
+  199  python3 palpindron.py 
+  200  python3 palpindron.py 
+  201  python3 palpindron.py 
+  202  python3 palpindron.py 
+  203  python3 list.py
+  204  clear
+  205  python3 list.py
+  206  clear
+  207  python3 list.py
+  208  python3 list.py
+  209  clwear
+  210  clear
+  211  python3 list.py
+  212  clear
+  213  python3 list.py
+  214  python3 list.py
+  215  clear
+  216  python3 list.py
+  217  python3 list.py
+  218  python3 list.py
+  219  python3 list.py
+  220  python3 list.py
+  221  python3 list.py
+  222  clear
+  223  python3 list.py
+  224  python3 list.py
+  225  python3 list.py
+  226  clear
+  227  python3 list.py
+  228  python3 list.py
+  229  python3 list.py
+  230  python3 list.py
+  231  python3 list.py
+  232  python3 list.py
+  233  clear
+  234  python3 list.py
+  235  python3 list.py
+  236  python3 student_storage.py 
+  237  python3 student_storage.py 
+  238  python3 student_storage.py 
+  239  python3 student_storage.py 
+  240  python3 student_storage.py 
+  241  python3 student_storage.py 
+  242  python3 student_storage.py 
+  243  python3 student_storage.py 
+  244  python3 student_storage.py 
+  245  python3 student_storage.py 
+  246  cleaer
+  247  clear
+  248  clear
+  249  python3 student_storage.py 
+  250  python3 student_storage.py 
+  251  python3 student_storage.py 
+  252  clear
+  253  python3 student_storage.py 
+  254  python3 student_storage.py 
+  255  python3 student_storage.py 
+  256  python3 student_storage.py 
+  257  python3 student_storage.py 
+  258  python3 student_storage.py 
+  259  python3 student_storage.py
+  260  python3 student_storage.py 
+  261  python3 student_storage.py 
+  262  python3 student_storage.py 
+  263  clear
+  264  python3 student_storage.py 
+  265  python3 student_storage.py 
+  266  python3 student_storage.py 
+  267  clear
+  268  python3 student_storage.py 
+  269  python3 student_storage.py 
+  270  python3 student_storage.py 
+  271  clear
+  272  python3 student_storage.py 
+  273  clear
+  274  python3 student_storage.py 
+  275  python3 student_storage.py 
+  276  python3 student_storage.py 
+  277  clear
+  278  python3 student_storage.py 
+  279  clear
+  280  python3 student_storage.py 
+  281  python3 student_storage.py 
+  282  clear
+  283  python3 student_storage.py 
+  284  clear
+  285  python3 student_storage.py 
+  286  clear
+  287  python3 student_storage.py 
+  288  python3 student_storage.py 
+  289  python3 q7_rev_para.py 
+  290  python3 q7_rev_para.py 
+  291  python3 q7_rev_para.py 
+  292  python3 q7_rev_para.py 
+  293  python3 q7_rev_para.py 
+  294  clear
+  295  python3 q7_rev_para.py 
+  296  python3 q7_rev_para.py 
+  297  python3 q7_rev_para.py 
+  298  python3 q7_rev_para.py 
+  299  python3 q7_rev_para.py 
+  300  python3 q7_rev_para.py 
+  301  python3 q7_rev_para.py 
+  302  python3 q7_rev_para.py 
+  303  cklear
+  304  clear
+  305  cklear
+  306  clear
+  307  python3 q7_rev_para.py 
+  308  python3 q7_rev_para.py 
+  309  python3 q7_rev_para.py 
+  310  python3 q7_rev_para.py 
+  311  python3 q7_rev_para.py 
+  312  clear
+  313  python3 q7_rev_para.py 
+  314  clear
+  315  clear
+  316  python3 q7_rev_para.py 
+  317  python3 q7_rev_para.py 
+  318  clear
+  319  python3 q7_rev_para.py 
+  320  clear
+  321  python3 q7_rev_para.py 
+  322  python3 q7_rev_para.py 
+  323  python3 q7_rev_para.py 
+  324  clear
+  325  python3 q7_rev_para.py 
+  326  python3 q7_rev_para.py 
+  327  python3 q7_rev_para.py 
+  328  python3 q7_rev_para.py 
+  329  cleare
+  330  clear\
+  331  clear
+  332  clear
+  333  python3 q7_rev_para.py 
+  334  python3 q7_rev_para.py 
+  335  clear
+  336  python3 q7_rev_para.py 
+  337  clear
+  338  python3 q7_rev_para.py 
+  339  python3 q7_rev_para.py 
+  340  python3 q7_rev_para.py 
+  341  python3 q7_rev_para.py 
+  342  python3 q7_rev_para.py 
+  343  python3 q7_rev_para.py 
+  344  clear
+  345  python3 q7_rev_para.py 
+  346  clear
+  347  python3 q7_rev_para.py 
+  348  python3 q7_rev_para.py 
+  349  python3 q7_rev_para.py 
+  350  python3 q7_rev_para.py 
+  351  man join
+  352  dir(join)
+  353  dir (join)
+  354  clear
+  355  clear
+  356  dir (join)
+  357  clear
+  358  python3 q7_rev_para.py 
+  359  clear
+  360  python3 q7_rev_para.py 
+  361  clear
+  362  python3 q7_rev_para.py 
+  363  clear
+  364  python3 q7_rev_para.py 
+  365  clear
+  366  python3 q7_rev_para.py 
+  367  python3 q7_rev_para.py 
+  368  python3 q7_rev_para.py 
+  369  clear
+  370  python3 q7_rev_para.py 
+  371  python3 count_word.py 
+  372  python3 count_word.py 
+  373  python3 count_word.py 
+  374  python3 count_word.py 
+  375  python3 count_word.py 
+  376  python3 count_word.py 
+  377  python3 count_word.py 
+  378  clear
+  379  python3 count_word.py 
+  380  python3 count_word.py 
+  381  python3 count_word.py 
+  382  python3 count_word.py 
+  383  clea
+  384  cklear]
+  385  clear
+  386  clear
+  387  clear
+  388  python3 count_word.py 
+  389  python3 count_word.py 
+  390  She
+  391  clear
+  392  python3 count_word.py 
+  393  python3 count_word.py 
+  394  clear
+  395  clear
+  396  python3 count_word.py 
+  397  python3 count_word.py 
+  398  clear
+  399  python3 count_word.py 
+  400  clear
+  401  python3 count_word.py 
+  402  python3 count_word.py 
+  403  python3 count_word.py 
+  404  python3 count_word.py 
+  405  python3 count_word.py 
+  406  python3 count_word.py 
+  407  python3 count_word.py 
+  408  python3 count_word.py 
+  409  clear
+  410  python3 count_word.py 
+  411  clear
+  412  python3 count_word.py 
+  413  python3 count_word.py 
+  414  python3 count_word.py 
+  415  python3 alternate.py 
+  416  python3 alternate.py 
+  417  python3 count_word.py 
+  418  clear
+  419  python3 alternate.py 
+  420  clear
+  421  python3 alternate.py 
+  422  python3 alternate.py 
+  423  clear
+  424  python3 alternate.py 
+  425  clear
+  426  python3 alternate.py 
+  427  clear
+  428  python3 alternate.py 
+  429  clear
+  430  python3 alternate.py 
+  431  clear
+  432  python3 alternate.py 
+  433  python3 alternate.py 
+  434  python3 alternate.py 
+  435  python3 alternate.py 
+  436  clear
+  437  python3 alternate.py 
+  438  clear
+  439  python3 alternate.py 
+  440  python3 alternate.py 
+  441  clear
+  442  python3 alternate.py 
+  443  clear
+  444  python3 alternate.py 
+  445  clear
+  446  python3 alternate.py 
+  447  clear
+  448  python3 alternate.py 
+  449  python3 student_storage.py 
+  450  clear
+  451  python3 student_storage.py 
+  452  clear
+  453  python3 student_storage.py 
+  454  clear
+  455  python3 student_storage.py 
+  456  clear
+  457  python3 list_split.py 
+  458  python3 list_split.py 
+  459  python3 list_split.py 
+  460  python3 list_split.py 
+  461  python3 multiline_string.py 
+  462  clear
+  463  python3 multiline_string.py 
+  464  python3 multiline_string.py 
+  465  cd PG-DIoT/
+  466  cd M3.\ Embedded\ Linux/
+  467  cd Day2
+  468  ls
+  469  cat etc/apt/sources.list
+  470  cd
+  471  cat etc/apt/sources.list
+  472  cat/etc/apt/sources.list
+  473  sudo cat etc/apt/sources.list
+  474  sudo nano /etc/apt/sources.list
+  475  sudo  /etc/apt/sources.list
+  476  sudo cat /etc/apt/sources.list
+  477  sudo cat etc/apt/sources.list
+  478  sudo cat /etc/apt/sources.list
+  479  sudo cat /etc/apt/sources.list
+  480  clear
+  481  cd PG-DIoT/M3.\ Embedded\ Linux/
+  482  cd Day3
+  483  ls
+  484  ls -l
+  485  ls -a
+  486  ls -lh
+  487  ls -r
+  488  ls && ls -r
+  489  ls && ls -r && ls -lh && ls -a
+  490  ls -R
+  491  ls -lt
+  492  ls -ltr
+  493  ls -s
+  494  ls -lh
+  495  ls > output.txt
+  496  ls
+  497  cat output.txt 
+  498  ls -lh > output.txt 
+  499  cat output.txt 
+  500  cd PG-DIoT/
+  501  cd M3.\ Embedded\ Linux/
+  502  mkdir -v Day3
+  503  mkdir -v Day4
+  504  cd Day4
+  505  echo "1,2" >/fiel1.txt && echo "3,4" >/fie
+  506  echo "1,2" >/file1.txt && echo "3,4" >/file2.txt && echo "5,6" >/file3.txt
+  507  echo "1,2" > /file1.txt && echo "3,4" ?
+  508  echo "1,2" > /file1.txt
+  509  echo "1,2" > file1.txt
+  510  echo "3,4" > file2.txt && echo "5,6" file3.txt
+  511  cat file2.txt && file2.txt 
+  512  echo "3,4" > file2.txt && "5,6" > fiel3.txt
+  513  echo "5,6" > file3.txt
+  514  cat file1.txt && file3.txt && file3.txt
+  515  echo "5,6" > file3.txt
+  516  cat file2.txt
+  517  cat file1.txt
+  518  cat file3.txt
+  519  cat file1.txt && file2.txt && file3.txt > result.txt
+  520  ls result.txt
+  521  ls
+  522  ls > result.txt
+  523  cat result.txt
+  524  cat >file1.txt && file2.txt && file3.txt
+  525  cat file1.txt file2.txt file3.txt >result.txt
+  526  cat result.txt
+  527  cat file1.txt
+  528  cat file1.txt
+  529  cat file2.txt
+  530  cat result.txt
+  531  echo "1,2" > file1.txt
+  532  cat file1.txt
+  533  cat file1.txt file2.txt file3.txt >result.txt
+  534  cat result.txt
+  535  tty
+  536  man tty
+  537  tty
+  538  clear
+  539  tty
+  540  echo "Comm between /dev/pts/1"
+  541  echo "connect /dev/pts/1" /dev/pts/1 
+  542  echo "connect to /dev/pts/1" > /dev/pts/1
+  543  echo "connect to /dev/pts/2" > /dev/pts/2
+  544  ls
+  545  cat -n result.txt
+  546  echo "hi i am in file4.txt" > file4.txt
+  547  cat file4.txt
+  548  cat file4.txt >> result.txt 
+  549  cat result.txt 
+  550  cat >> result.txt 
+  551  cat result.txt 
+  552  cat >> result.txt 
+  553  cat result.txt 
+  554  cat >> result.txt 
+  555  cat result.txt 
+  556  cat < result.txt 
+  557  history
+  558  history > day3command.txt
+  559  cat day3command.txt 
+  560  cat day3command.txt 
+  561  history > day3command.txt 
