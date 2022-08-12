@@ -1,0 +1,2 @@
+1.Create Stack using link list.
+2.Create Queue using link list.
