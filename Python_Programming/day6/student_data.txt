@@ -1,0 +1,6 @@
+1 : siddhant : 100 
+2 : payal : 200 
+3 : siddhesh : 230 
+4 : snehal : 123 
+5 : asd : 23 
+6 : qwe : 123 

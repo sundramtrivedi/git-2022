@@ -1,0 +1,9 @@
+Tuples
+--> like a list, tuples are iterable arrays of objects
+--> tuples are immutable - once created, unchangeable
+--> to add or remove items, you must redeclare
+--> example uses of tuples
+	=> country names
+Dictionary
+--> dictionaries are sets of key and value pairs 
+--> allows you to identify values by a descriptive 

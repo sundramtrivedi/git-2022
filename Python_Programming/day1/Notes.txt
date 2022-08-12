@@ -1,0 +1,75 @@
+Python
+--> open source
+--> free
+--> large community support
+--> GPL(General Purpose Licence)
+--> interpreted language(line by line)
+
+check python version :
+--> python3 --version
+--> python 3.8.10
+
+--> converter => convert whole code into native code at a time
+--> compiler => java(first stage),go,rust,gcc
+--> interpreted => e.g php,js,elixir,bash,perl,python
+--> decompiler => converts native code to programming language
+--> transpiler => converts one programming language to another programming language
+--> assembler => converts to assembly language
+
+two methods to executing code :
+--> python shell : acts like terminal
+--> python code file :
+--> python shell : python or python3
+--> how to exit : ctrl+d (means EOF character)
+
+datatypes:
+--> datatypes are available in python(but don't mention it)
+
+variables:
+--> no declaration of variable
+--> create variable by initializing it
+--> we can assign any different datatype value
+
+print on screen
+--> print("string")
+
+save the file in python
+--> filename.py
+
+execution of file
+--> python3 filename
+
+user input:
+--> input() => return string
+
+All inputs are return in string
+
+string:
+--> double quotes (" ")
+--> single quotes (' ')
+
+comments
+--> single line comments use hashtag (#)
+
+typecast:
+--> int(arg) => convert to integer
+--> str(arg) => convert to string
+
+control structure:
+--> if syntax:
+	=> if expression :
+			statement
+--> else syntax:
+	=> else:
+		statement
+
+Logical operators :
+--> and
+--> or
+
+Loop syntax:
+--> while syntax:
+	=> while(expression):
+			statement
+
+

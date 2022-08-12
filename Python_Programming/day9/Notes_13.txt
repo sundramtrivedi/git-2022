@@ -1,0 +1,7 @@
+JSON (Java Script Object Notation)
+--> import json
+--> x = '{"name"."sid","city"."pune"}'
+--> y = json.loads(x)
+--> print(y["name"])
+--> y = json.dumps(x)	# convert dictionary to json
+
